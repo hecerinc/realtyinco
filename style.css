@@ -1,0 +1,1029 @@
+/*
+Theme Name: HOLD - Realty World Inco
+Theme URI: http://www.hold.mx/
+Description: Realty World
+Author: Hector Rincón
+Version: 1.0
+Tags:
+*/
+/* Fonts */
+@font-face {
+	font-family: 'Akzidenz';
+	font-weight: 400;
+	src: url('fonts/AkzidGroStdReg.eot');
+	src: url('fonts/AkzidGroStdReg.eot') format('embedded-opentype'),
+		 url('fonts/AkzidGroStdReg.woff2') format('woff2'),
+		 url('fonts/AkzidGroStdReg.woff') format('woff'),
+		 url('fonts/AkzidGroStdReg.ttf') format('truetype'),
+		 url('fonts/AkzidGroStdReg.svg#AkzidGroStdReg') format('svg');
+}
+@font-face {
+	font-family: 'Akzidenz';
+	font-weight: 600;
+	src: url('fonts/AkzidGroStdMed.eot');
+	src: url('fonts/AkzidGroStdMed.eot') format('embedded-opentype'),
+		 url('fonts/AkzidGroStdMed.woff2') format('woff2'),
+		 url('fonts/AkzidGroStdMed.woff') format('woff'),
+		 url('fonts/AkzidGroStdMed.ttf') format('truetype'),
+		 url('fonts/AkzidGroStdMed.svg#AkzidGroStdMed') format('svg');
+}
+@font-face {
+	font-family: 'Akzidenz';
+	font-weight: 800;
+	src: url('fonts/AkzidGroStdBol.eot');
+	src: url('fonts/AkzidGroStdBol.eot') format('embedded-opentype'),
+		 url('fonts/AkzidGroStdBol.woff2') format('woff2'),
+		 url('fonts/AkzidGroStdBol.woff') format('woff'),
+		 url('fonts/AkzidGroStdBol.ttf') format('truetype'),
+		 url('fonts/AkzidGroStdBol.svg#AkzidGroStdBol') format('svg');
+}
+body{
+	font-family: 'Akzidenz';
+}
+p{
+	margin-bottom: 0;
+}
+img{
+	max-width:100%;
+}
+h2{
+	font-size: 2.5rem; /*25px */
+}
+/* Clear */
+.clear {
+	clear: both;
+	display: block;
+	overflow: hidden;
+	visibility: hidden;
+	width: 0;
+	height: 0;
+}
+.h5px{
+	height: 5px;
+}
+.h10px{
+	height: 10px;
+}
+.h15px{
+	height: 15px;
+}
+.h20px{
+	height: 20px;
+}
+.h25px{
+	height: 25px;
+}
+.h30px{
+	height: 30px;
+}
+.h40px{
+	height: 40px;
+}
+.h50px{
+	height: 50px;
+}
+.h60px{
+	height: 60px;
+}
+.h80px{
+	height: 80px;
+}
+.h100px{
+	height: 100px;
+}
+.h240px{
+	height: 240px;
+}
+.top-band, .sub-nav-band{
+	background: rgba(255,255,255,1);
+	background: -moz-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(250,250,250,1) 49%, rgba(244,244,244,0.66) 100%);
+	background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(255,255,255,1)), color-stop(49%, rgba(250,250,250,1)), color-stop(100%, rgba(244,244,244,0.66)));
+	background: -webkit-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(250,250,250,1) 49%, rgba(244,244,244,0.66) 100%);
+	background: -o-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(250,250,250,1) 49%, rgba(244,244,244,0.66) 100%);
+	background: -ms-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(250,250,250,1) 49%, rgba(244,244,244,0.66) 100%);
+	background: linear-gradient(to bottom, rgba(255,255,255,1) 0%, rgba(250,250,250,1) 49%, rgba(244,244,244,0.66) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#f4f4f4', GradientType=0 );
+}
+.logo{
+	background:url(img/logo.png) no-repeat;
+	display: block;
+	text-indent: -9999px;
+	color: transparent;
+}
+.vr{
+	background:url(img/verticaldivider.png) no-repeat;
+	display: block;
+	height: 90px;
+	width: 1px;
+	margin-left: 30px;
+}
+.property-search{
+	margin-bottom: 15px;
+}
+.property-search form, .property-search fieldset{
+	margin-bottom: 0;
+}
+.prop-legend{
+	font-size: 1.9rem;
+	background-image: url(img/ico-search.png);
+	background-repeat: no-repeat;
+	font-weight: 400;
+	background-position: 0 5px;
+	width: 100%;
+	text-align: center;
+}
+label{
+	font-weight: 400;
+}
+input[type="radio"]{
+	margin-bottom: 0;
+}
+.property-search label{
+	display: inline-block;
+}
+.selects select{
+	width: 205px;
+	height: 25px;
+	font-family: Arial, sans-serif;
+	font-size: 1.3rem;
+	padding:0 0 0 17px;
+}
+.selects select.left{
+	width: 170px;
+}
+#select-zona, #select-tipo, #select-range{margin-bottom: 9px;}
+.property-search .submit{
+	width: 140px;
+	height: 60px;
+	border-radius: 10px;
+	font-size: 1.9rem;
+	background: rgba(238,40,45,1);
+	background: -moz-linear-gradient(top, rgba(238,40,45,1) 0%, rgba(188,22,6,1) 100%);
+	background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(238,40,45,1)), color-stop(100%, rgba(188,22,6,1)));
+	background: -webkit-linear-gradient(top, rgba(238,40,45,1) 0%, rgba(188,22,6,1) 100%);
+	background: -o-linear-gradient(top, rgba(238,40,45,1) 0%, rgba(188,22,6,1) 100%);
+	background: -ms-linear-gradient(top, rgba(238,40,45,1) 0%, rgba(188,22,6,1) 100%);
+	background: linear-gradient(to bottom, rgba(238,40,45,1) 0%, rgba(188,22,6,1) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ee282d', endColorstr='#bc1606', GradientType=0 );
+	color: #fff;
+	border: 0 none;
+	font-weight: 800;
+	letter-spacing: 0;
+	margin-left: 10px;
+	margin-bottom: 6px;
+}
+.property-search .submit:hover, .submit:focus{
+	color: #fff;
+}
+.advanced-search{
+	text-transform: uppercase;
+	text-decoration: underline;
+	text-align: center;
+	display: block;
+	color: #221E1F;
+	font-size: 1.1rem;
+	font-weight: 800;
+}
+/* Main Navigation */
+.nav-band{
+	background: rgba(68,68,68,1);
+	background: -moz-linear-gradient(top, rgba(68,68,68,1) 0%, rgba(34,30,31,1) 100%);
+	background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(68,68,68,1)), color-stop(100%, rgba(34,30,31,1)));
+	background: -webkit-linear-gradient(top, rgba(68,68,68,1) 0%, rgba(34,30,31,1) 100%);
+	background: -o-linear-gradient(top, rgba(68,68,68,1) 0%, rgba(34,30,31,1) 100%);
+	background: -ms-linear-gradient(top, rgba(68,68,68,1) 0%, rgba(34,30,31,1) 100%);
+	background: linear-gradient(to bottom, rgba(68,68,68,1) 0%, rgba(34,30,31,1) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#444444', endColorstr='#221e1f', GradientType=0 );
+	padding-top: 8px;
+}
+.main-nav{
+	padding:0 10px 0 25px;
+}
+.main-nav ul{
+	margin-bottom: 0;
+}
+.main-nav li{
+	display: inline-block;
+	border-left: 1px solid #ACABAB;
+}
+.main-nav a{
+	color: #fff;
+	display: block;
+	font-size: 1.6rem;
+	padding:0 25px;
+	text-decoration: none;
+}
+.main-nav a:hover{
+	color: #fff;
+}
+.main-nav .home{
+	border-left: 0 none;
+}
+.main-nav .home a{
+	text-indent: -9999px;
+	color:transparent;
+	background: url(img/ico-home.png) no-repeat;
+	width: 24px;
+	height: 19px;
+	padding:0 5px 0 0;
+	position: relative;
+	top: 3px;
+}
+.main-nav .last a{
+	padding:0 0 0 25px;
+}
+/* --end navigation */
+.sub-nav-band p{
+	font-size: 1.4rem;
+}
+p.realty-world{
+	text-transform: uppercase;
+	color: #EE282D;
+	font-weight: 800;
+}
+.sub-nav-band .address{
+	letter-spacing: 0;
+}
+.fb{
+	text-indent: -9999px;
+	color: transparent;
+	width: 31px;
+	height: 31px;
+	display: inline-block;
+	background:url(img/ico-fb.png) no-repeat;
+	position: relative;
+	top:-2px;
+}
+.btn-search-property, .btn-register-property, .btn-attention{
+	background-position: 10px;
+	border-radius: 20px;
+	border:1px solid #E72025;
+	color: #E72025;
+	font-weight: 600;
+	font-size: 1.3rem;
+	padding:5px 13px 5px 34px;
+	text-decoration: none;
+}
+.btn-search-property:hover, 
+.btn-register-property:hover,
+.btn-attention:hover
+{
+	color: #E72025;
+}
+.btn-search-property{
+	background-image: url(img/ico-search-prop.png);
+	background-repeat: no-repeat;
+	margin-right: 5px;
+}
+.btn-register-property{
+	background-image: url(img/ico-register-prop.png);
+	background-repeat: no-repeat;
+	margin:0 5px;
+}
+.btn-attention{
+	background-image:url(img/ico-attention.png);
+	background-repeat:no-repeat;
+	margin: 0 5px 0 15px;
+}
+.sub-nav-band .row{
+	padding: 11px 0 4px 0;
+}
+/* Footer */
+.foot{
+	background-color: #F5F5F5;
+	padding:22px 0;
+}
+.foot .row{
+	padding:0 40px 0 35px;
+}
+.foot p, .links a{
+	color: #EE282D;
+	font-weight: 800;
+	font-size: 1.4rem;
+}
+.links a:first-child{
+	margin-right: 20px;
+}
+/* End footer */
+.casas a, .building-image img{
+	display: block;
+	text-decoration: none;
+}
+.casas .title{
+	color: #E72F26;
+}
+.casas .price{
+	display: inline-block;
+	color: #000;
+}
+.casas .call-to-action{
+	background:url(img/ico-call-to.png) no-repeat;
+	width: 16px;
+	height: 16px;
+	display: inline-block;
+}
+.hor-rule{
+	margin-top: 10px;
+}
+.action-btns a{
+	background:url(img/icon-sprite.png) no-repeat;
+	width: 42px;
+	height: 42px;
+	display: inline-block;
+	margin:0 2px;
+}
+a.calc{
+}
+a.e-mail-spec{
+	background-position: -42px 0;
+}
+a.print{
+	background-position: -84px 0;
+}
+a.fb-spec{
+	background-position: -125px 0;
+}
+a.tw-spec{
+	background-position: -169px 0;
+}
+/* Especifico
+* ---------------------
+*/
+.amenities{
+	width: 100%;
+}
+.amenities p{
+	font-weight: 800;
+	color: #282526;
+	text-transform: uppercase;
+	font-size: 1.4rem;
+	float: left;
+	border-right: 1px solid #000;
+	padding-right: 10px;
+	margin-right: 10px;
+	position: relative;
+	top:8px;
+}
+.amenity{
+	width: 38px;
+	height: 38px;
+	background:url(img/ammenities-sprite.png) no-repeat;
+	margin:0 5px;
+	float: left;
+}
+.pricing{
+	background:#FAFAFA;
+	border-bottom-right-radius: 10px;
+	border-bottom-left-radius: 10px;
+	padding-bottom: 1px;
+}
+.pricing .legend{
+	background:#000;
+	color: #fff;
+	font-weight: 800;
+	font-size: 2.1rem;
+	letter-spacing: 0;
+	text-align: center;
+	margin-bottom: 10px;
+}
+.pricing li{
+	list-style: none;
+	margin:0;
+}
+ul{
+	margin:0;
+}
+.pricing .one{
+	float: left;
+	border-right: 1px solid #ccc;
+	outline: right 1px solid #fff;
+	margin-right: 20px;
+	padding:0 35px 0 25px;
+}
+.pricing .two{
+	/*float: right;*/
+	padding-right: 25px;
+}
+.pricing .id{
+	color: #F0322D;
+	margin:10px 0;
+	display: block;
+	text-align: center;
+	text-transform: uppercase;
+	font-weight: 800;
+	font-size: 1.4rem;
+}
+.mas-informacion{
+	background: rgba(34,30,31,1);
+	background: -moz-linear-gradient(top, rgba(34,30,31,1) 0%, rgba(34,30,31,1) 9%, rgba(68,68,68,1) 100%);
+	background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(34,30,31,1)), color-stop(9%, rgba(34,30,31,1)), color-stop(100%, rgba(68,68,68,1)));
+	background: -webkit-linear-gradient(top, rgba(34,30,31,1) 0%, rgba(34,30,31,1) 9%, rgba(68,68,68,1) 100%);
+	background: -o-linear-gradient(top, rgba(34,30,31,1) 0%, rgba(34,30,31,1) 9%, rgba(68,68,68,1) 100%);
+	background: -ms-linear-gradient(top, rgba(34,30,31,1) 0%, rgba(34,30,31,1) 9%, rgba(68,68,68,1) 100%);
+	background: linear-gradient(to bottom, rgba(34,30,31,1) 0%, rgba(34,30,31,1) 9%, rgba(68,68,68,1) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#221e1f', endColorstr='#444444', GradientType=0 );
+	border-radius:10px;
+	width: 100%;
+	padding:0 20px;
+	box-sizing: border-box;
+}
+.mas-informacion .title{
+	text-transform: uppercase;
+	font-weight: 800;
+	color: #EF322C;
+	font-size: 1.4rem;
+	margin-bottom: 5px;
+}
+.mas-informacion p, .mas-informacion a{
+	color: #fff;
+}
+.mas-informacion p{
+	line-height: 1.2em;
+}
+.little-man{
+	padding-bottom:30px;
+	padding-right:10px;
+}
+.contact-here{
+	background: rgba(238,40,45,1);
+	background: -moz-linear-gradient(top, rgba(238,40,45,1) 0%, rgba(188,22,6,1) 100%);
+	background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(238,40,45,1)), color-stop(100%, rgba(188,22,6,1)));
+	background: -webkit-linear-gradient(top, rgba(238,40,45,1) 0%, rgba(188,22,6,1) 100%);
+	background: -o-linear-gradient(top, rgba(238,40,45,1) 0%, rgba(188,22,6,1) 100%);
+	background: -ms-linear-gradient(top, rgba(238,40,45,1) 0%, rgba(188,22,6,1) 100%);
+	background: linear-gradient(to bottom, rgba(238,40,45,1) 0%, rgba(188,22,6,1) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ee282d', endColorstr='#bc1606', GradientType=0 );
+	display: block;
+	width: 80px;
+	height: 91px;
+	font-size: 1.2rem;
+	font-weight: 800;
+	text-transform: uppercase;
+	padding:16px 5px 0 10px;
+	line-height: 16px;
+}
+.contact-here img{
+	display: block;
+	margin: 0 auto;
+}
+h5{
+	font-size: 1.5rem;
+	font-weight: 800;
+}
+.similar h5{
+	text-transform: uppercase;
+}
+.similar-item{
+	float: left;
+	width: 33%;
+}
+.similar-item:first-child{
+	margin-left: 0;
+}
+.similar-item a.go-to-property, .go-to-prop{
+	color: #000;
+	background:url(img/ico-call-to.png) no-repeat right;
+	padding-right:25px;
+}
+/*Map*/
+.map{
+	position: relative;
+	height: 0;
+	overflow: hidden;
+	padding-bottom: 80.952380%;
+}
+.map iframe{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100% !important;
+	height: 100% !important;
+}
+.logo{
+	background-size:210px;
+	height: 80px;
+	width: 210px;
+}
+.vistas{
+	width: 230px;
+	margin: 0 auto;
+	float: none;
+}
+.selects{
+	width: 100%;
+}
+
+.found .bottom{
+	background-color: #FAFAFA;
+	border-bottom: 1px solid #F3F3F3;
+	width: 100%;
+	padding:6px 35px;
+	display: inline-block;
+	box-sizing:border-box;
+}
+.found .top{
+	padding-left: 10px;
+	width: 100%;
+	display: inline-block;
+}
+.found .top div{
+	float: left;
+	width: 33%;
+}
+.found .top p{
+	text-align: center;
+	font-size: 1.5rem;
+}
+.found .top .prop-id p{
+	font-size: 1.8rem;
+}
+.found .top .name{
+	color: #E72F26;
+}
+.found .img{
+	width: 220px;
+}
+.btn-mas-info span{
+	background:url(img/ico-more-info.png) no-repeat;
+	width: 18px;
+	height: 18px;
+	display: inline-block;
+	position: relative;
+	top: 3px;
+	margin-right: 5px;
+}
+.found{
+	width: 100%;
+}
+th, td{
+	padding: 0;
+	border-bottom: 0;
+}
+.found ul.right{
+	margin-right: 50px;
+}
+.found li{
+	list-style: none;
+	margin-bottom: 0;
+}
+.btn-mas-info{
+	display: block;
+	font-family: Arial, sans-serif;
+	font-size: 1.3rem;
+	font-weight: bold;
+	border:1px solid #000;
+	text-align: center;
+	border-radius:20px;
+	color: #000;
+	width: 160px;
+	text-decoration: none;
+	padding:1px 3px 2px 0;
+	margin-top: 10px;
+}
+.btn-mas-info:hover{
+	color: #000;
+}
+#select-orderby{
+	float: left;
+}
+.numres{
+	float: left;
+	color: #666;
+	text-transform: uppercase;
+	font-size: 1.3rem;
+}
+.quickview{
+	width: 100%;
+}
+.quickview th{
+	background-color: #F8F8F8;
+	font-weight: 400;
+	text-transform: uppercase;
+	padding:10px 0;
+}
+.quickview th, .quickview td{
+	font-size: 1.3rem;
+}
+.quickview td{
+	border-bottom: 1px solid #ccc;
+	padding:15px 0;
+}
+.link-to-prop a{
+	color: #F0322D;
+}
+.quickview th:first-child, .quickview td:first-child{
+	padding-left: 20px;
+}
+.recommend{
+	width: 78.125%;
+	margin: 0 auto;
+}
+.property-id{
+	font-size: 1.8rem;
+	width: 380px;
+	margin: 0 auto;
+}
+.property-id .right{
+	width: 250px;
+	height: 27px;
+	background-color: #DDD;
+	border-radius:20px;
+	text-align: center;
+	margin-left: 27px;
+}
+.recommend .i-text{
+	width: 250px;
+	height: 28px;
+	border:1px solid #000;
+	border-radius:20px;
+	display: inline-block;
+	margin: 0;
+}
+.recommend label{
+	display: inline-block;
+	font-size: 1.6rem;
+}
+.recommend .label{
+	font-size: 1.6rem;
+}
+.recommend .friend{
+	margin-top:10px;
+	width: 100%;
+}
+.recommend textarea{
+	width: 100%;
+	resize:none;
+	border-radius:18px;
+	height: 100px;
+	border-color:#000;
+}
+.recommend hr{
+	margin: 20px 0;
+}
+.recommend .submit, .calc .submit{
+	width: 210px;
+	height: 46px;
+	background: rgba(238,40,45,1);
+	background: -moz-linear-gradient(top, rgba(238,40,45,1) 0%, rgba(188,22,6,1) 100%);
+	background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(238,40,45,1)), color-stop(100%, rgba(188,22,6,1)));
+	background: -webkit-linear-gradient(top, rgba(238,40,45,1) 0%, rgba(188,22,6,1) 100%);
+	background: -o-linear-gradient(top, rgba(238,40,45,1) 0%, rgba(188,22,6,1) 100%);
+	background: -ms-linear-gradient(top, rgba(238,40,45,1) 0%, rgba(188,22,6,1) 100%);
+	background: linear-gradient(to bottom, rgba(238,40,45,1) 0%, rgba(188,22,6,1) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ee282d', endColorstr='#bc1606', GradientType=0 );
+	color: #fff;
+	text-transform: uppercase;
+	font-size: 1.9rem;
+	font-weight: 800;
+	border:0 none;
+	border-radius:10px;
+	float: right;
+}
+.btn-break{
+	display: none;
+}
+p.nota{
+	text-transform: uppercase;
+	font-weight: 800;
+	color: #ED272C;
+	margin-bottom: 10px;
+}
+/* Calculator */
+.calc{
+	background-color: #F5F5F5;
+	border-radius:20px;
+	padding:12px 26px 0;
+}
+.calc .label{
+	color: #3E3E3E;
+	font-size: 1.6rem;
+	float: left;
+}
+.calc input[type="text"]{
+	float: right;
+	width: 250px;
+	height: 28px;
+	border-radius: 20px;
+	border: 1px solid #000;
+	text-align: center;
+}
+#ID{
+	background-color: #DDD;
+	border: 0 none;
+}
+.calc div {
+	width: 100%;
+}
+.calc > div{
+	border-bottom: 1px solid #BEBEBE;
+	margin-bottom: 15px;
+}
+.calc .last{
+	border-bottom: 0 none;
+	margin: 0;
+}
+.calc .submit{
+	float:none;
+	margin: 0 auto;
+	/*width: 380px;*/
+	display: block;
+	position: relative;
+	top: 23px;
+	width: 100%;
+}
+.instructions{
+	font-size: 1.4rem;
+	text-align: center;
+	width: 100%;
+	display: block;
+	margin-bottom: 10px;
+}
+.ico-percent{
+	background: url(img/ico-percent.png) no-repeat 12px 7px;
+}
+.ico-money{
+	background:url(img/ico-money.png) no-repeat 12px 5px;
+}
+
+.aboutus ul li{
+	margin: 0;
+	list-style: inside disc;
+}
+.asesor{
+	border:1px solid #000;
+	padding: 16px 26px;
+}
+ul.details li{
+	list-style: none;
+	font-size: 1.5rem;
+	color: #000;
+	margin: 0;
+	line-height: 1.1em;
+}
+.details a{
+	color: #000;
+}
+ul.details li.name a{
+	color: #CC312C;
+	font-weight: 800;
+	text-decoration: none;
+}
+.asesores .row{
+	margin-bottom: 15px;
+}
+/* Media Queries
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+/*
+Note: The best way to structure the use of media queries is to create the queries
+near the relevant code. For example, if you wanted to change the styles for buttons
+on small devices, paste the mobile query code up in the buttons section and style it
+there.
+*/
+
+.mobile{
+	display: inline-block !important;
+}
+.mobile-b{
+	display: block !important;
+}
+.no-mobile{
+	display: none;
+}
+.no-mobile-b{
+	display: none;
+}
+.customSelect{
+	float: none;
+}
+/* Larger than mobile */
+@media (min-width: 400px) {}
+
+/* Larger than phablet (also point when grid becomes active) */
+@media (min-width: 550px) {}
+/* Smaller than phablet */
+@media (max-width: 550px){
+	.customSelect{
+		width: 100% !important;
+	}
+	#select-deal, #select-range{
+		margin-bottom: 13px;
+	}
+	.property-search .submit{
+		margin: 0;
+		width: 100%;		
+	}
+	.selects .select-left, .selects .select-right, .btn-search, .address{
+		float: none;
+	}
+	.property-search{
+		width: 100%;
+	}
+	.nav-collapse li{
+		width: 100%;
+	}
+	.nav-toggle{
+		background:url(img/hamburger.svg) no-repeat;
+		text-indent: -9999px;
+		color: transparent;
+		display: block;
+		width: 30px;
+		height: 30px;
+		padding: 10px 0 0;
+		background-size:30px;
+	}
+	.main-nav{
+		padding-bottom: 20px;
+	}
+	.main-nav li{
+		border-left: 0 none;
+	}
+	.sub-nav-band .row{
+		padding:0 0 20px;
+	}
+	.btn-register-property, .btn-search-property, .btn-attention{
+		margin: 0 auto;
+		display: block;
+		box-sizing:border-box;
+		width: 162px;
+	}
+	.btn-register-property, .btn-attention{
+		margin-bottom: 5px;
+	}
+	.address{
+		margin-bottom: 10px;
+		text-align: center;
+	}
+	.realty-world{
+		float: none;
+		text-align: center;
+		margin-top: 20px;
+	}
+	.casas .columns{
+		text-align: center;
+	}
+	.building-image img{
+		margin: 0 auto;
+	}
+	.pricing ul.one{
+		border-right: 0 none;
+	}
+	.pricing ul.two{
+		padding:0 25px;
+	}
+	.amenities p{
+		border-right: 0 none;
+		display: block;
+		float:none;
+		margin-bottom: 20px;
+		text-align: center;
+	}
+	#vnormal{
+		margin-left: 20px;
+		margin-bottom: 20px;
+	}
+	.advanced-search{
+		margin-top: 15px;
+	}
+	.calc input[type="text"]{
+		width: 100%;
+	}
+	.calc .label{
+		margin-bottom: 10px;
+	}
+	.asesores .row .asesor:first-child{
+		margin-bottom: 15px;
+	}
+	
+}
+@media(max-width:1120px){
+	.btn-break{
+		display: block;
+	}
+}
+/* Smaller than tablet */
+@media (max-width: 750px){
+	.recommend{
+		width: 88.125%;
+	}
+	.property-id{
+		width: 100%;
+	}	
+	.property-id.u-cf p{
+		float:none;
+		width: 100%;
+		margin: 0 auto;
+		text-align: center;
+	}
+	.from div{
+		float:none;
+	}
+	.from .u-fl{
+		margin-bottom: 10px;
+	}
+	.recommend .friend{
+		margin-bottom: 30px;
+	}
+	.recommend .friend > div{
+		float: none;
+		margin-bottom: 10px;
+	}
+	.recommend .submit{
+		width: 100%;
+	}
+	.nav-toggle{
+		background:url(img/hamburger.svg) no-repeat;
+		text-indent: -9999px;
+		color: transparent;
+		display: block;
+		width: 30px;
+		height: 30px;
+		padding: 10px 0 0;
+		background-size:30px;
+	}
+}
+/* Larger than tablet */
+@media (min-width: 750px) {
+	.logo{
+		background-size:initial;
+		width: 326px;
+		height: 109px;
+		margin: 0 auto;
+	}
+	.top-header{
+		padding:0 18px;
+	}
+	.prop-legend{
+		margin-right: 28px;
+		padding-left: 20px;
+		width:initial;
+		text-align: left;
+	}
+	.vistas{
+		float: left;
+		width: 100%;
+	}
+	.selects{
+		width: initial;
+	}
+}
+@media (max-width: 1000px){
+	.recommend .i-text{
+		float: right;
+	}
+}
+@media (max-width: 1115px){
+	.logo{
+		float: none !important;
+		margin: 0 auto;
+	}
+	.six.columns.calculator{
+		width: 100% !important;
+		margin: 0;
+	}
+}
+/* Larger than desktop */
+@media (min-width: 1000px) {
+	.mobile, .mobile-b{
+		display: none !important;
+	}
+	.no-mobile{
+		display: inline-block !important;
+	}
+	.no-mobile-b{
+		display: block !important;
+	}
+	.asesores{
+		width: 70%;
+	}
+}
+/* Smaller than desktop */
+@media(max-width: 1115px){
+	.specialbreak{
+		display: block;
+	}
+	.property-search{
+		float: none;
+	}
+	.property-search form{
+		margin: 0 auto;
+	}
+	.found .top div{
+		float: none;
+		width: 100%;
+	}
+	.btn-mas-info{
+		float: none;
+		margin: 0 auto;
+	}
+	.found .bottom{
+		background:none;
+		border:0 none;
+	}
+}
+@media(min-width:1116px){
+	.specialbreak{
+		display: none;
+	}
+}
+/* Larger than Desktop HD */
+@media (min-width: 1200px) {}
