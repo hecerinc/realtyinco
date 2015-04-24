@@ -934,6 +934,14 @@ ul.details li.name a{
 	float: left;
 	width: 33%;
 }
+.aboutus .main-copy{
+	display: inline;
+	/*padding-left: 20px;*/
+}
+.aboutus-image{
+	float: left;
+	margin-right: 30px;
+}
 /* Media Queries
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 /*
