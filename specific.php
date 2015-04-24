@@ -19,9 +19,6 @@
 					<div class="slide"><img src="img/slick.png" alt=""></div>
 					<div class="slide"><img src="img/slick.png" alt=""></div>
 				</div>
-				<div class="map no-mobile-b">
-					<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3596.7466069752254!2d-100.33496049206542!3d25.646534142268596!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8662be6cf41998b9%3A0x85d1e4912d3acf3c!2sHospital+Zambrano+Hellion!5e0!3m2!1sen!2s!4v1423837820842" width="420" height="340" frameborder="0" style="border:0"></iframe>
-				</div>
 			</div>
 			<div class="six columns second">
 				<div class="action-btns">
@@ -70,7 +67,75 @@
 					<div class="clear"></div>
 					<p class="id">Propiedad ID: 31-CV-25</p>
 				</div>
-				<div class="clear h20px"></div>
+				<div class="clear h20px mobile-b"></div>
+			</div>
+		</div>
+		<div class="row amenities-list">
+			<p class="legend">Amenidades</p>
+			<div class="list-container">
+				<ul class="col">
+					<li><span class="amenity-ico true"></span> Sofa Bed</li>
+					<li><span class="amenity-ico true"></span> Sofa Bed</li>
+					<li><span class="amenity-ico true"></span> Sofa Bed</li>
+					<li><span class="amenity-ico true"></span> Sofa Bed</li>
+					<li><span class="amenity-ico true"></span> Sofa Bed</li>
+					<li><span class="amenity-ico true"></span> Sofa Bed</li>
+					<li><span class="amenity-ico true"></span> Sofa Bed</li>
+					<li><span class="amenity-ico true"></span> Sofa Bed</li>
+					<li><span class="amenity-ico true"></span> Sofa Bed</li>
+				</ul>
+				<ul class="col">
+					<li><span class="amenity-ico false"></span> Sofa Bed</li>
+					<li><span class="amenity-ico false"></span> Sofa Bed</li>
+					<li><span class="amenity-ico false"></span> Sofa Bed</li>
+					<li><span class="amenity-ico false"></span> Sofa Bed</li>
+					<li><span class="amenity-ico false"></span> Sofa Bed</li>
+					<li><span class="amenity-ico false"></span> Sofa Bed</li>
+					<li><span class="amenity-ico false"></span> Sofa Bed</li>
+					<li><span class="amenity-ico false"></span> Sofa Bed</li>
+					<li><span class="amenity-ico false"></span> Sofa Bed</li>
+				</ul>
+				<ul class="col">
+					<li><span class="amenity-ico true"></span> Sofa Bed</li>
+					<li><span class="amenity-ico true"></span> Sofa Bed</li>
+					<li><span class="amenity-ico true"></span> Sofa Bed</li>
+					<li><span class="amenity-ico true"></span> Sofa Bed</li>
+					<li><span class="amenity-ico true"></span> Sofa Bed</li>
+					<li><span class="amenity-ico true"></span> Sofa Bed</li>
+					<li><span class="amenity-ico true"></span> Sofa Bed</li>
+					<li><span class="amenity-ico true"></span> Sofa Bed</li>
+					<li><span class="amenity-ico true"></span> Sofa Bed</li>
+				</ul>
+			</div>
+		</div>
+		<div class="row description-spec">
+			<p class="legend">Descripci&oacute;n de la propiedad</p>
+			<p class="desc">Cuenta con cochera techada para 3 autos, y 3 autos más sin techar.<br><br>
+
+En el primer nivel encontramos una oficina, sala, comedor y baño de visitas. En ese nivel están también la cocina con cubierta de granito, equipada con horno eléctrico y campana, así como un lava vajillas. La despensa es un área muy amplia ubicada en el parea de la cocina. El piso de este nivel es mármol crema.<br><br>
+
+En el pantry se pueden guardar cuchillería, vajillas y vasijas para servir, así como mantelería.
+Lavandería techada y cuarto de servicio con acceso independiente a la casa.
+<br><br>
+El en segundo nivel, donde el piso es de madera, está la recámara principal que tiene una hermosa vista a la sierra, dos lavabos separados, sanitario y mingitorio juntos, regadera independiente. Esta recámara cuenta con 2 walk in closets.
+<br><br>
+Las otras dos recámaras también tienen con walk in closets y una de ellas cuenta con tina de baño. Ambas tienen hermosas vistas a la sierra y una de ellas tiene acceso a las terrazas al frente de la casa.<br><br>
+Entre las recámaras se cuenta con un cuarto de televisión y a un lado un closet para guardar blancos con un sink integrado.
+</p>
+		</div>
+		<div class="row map-calc">
+			<div class="u-fl">
+				<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3596.7466069752254!2d-100.33496049206542!3d25.646534142268596!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8662be6cf41998b9%3A0x85d1e4912d3acf3c!2sHospital+Zambrano+Hellion!5e0!3m2!1sen!2s!4v1423837820842" width="420" height="340" frameborder="0" style="border:0"></iframe>
+			</div>
+			<div class="u-fr right-side">
+				<div class="calc-area u-cf">
+					<img src="img/ico-calc.png" alt="Calculadora" class="calc-ico u-fl">
+					<div class="u-fr">
+						<h1 class="calc-hero">Calculadora</h1>
+						<p class="calc-sub">Te ayudamos a conseguir el cr&eacute;dito</p>
+						<a href="#" class="click-here-calc">Da click aqu&iacute; ›</a>
+					</div>
+				</div>
 				<div class="mas-informacion u-cf">
 					<div class="u-fl" style="padding:10px 0">
 						<div class="title">&iquest;M&aacute;s informes? Contacta a un asesor</div>
@@ -79,26 +144,36 @@
 					</div>
 					<a href="#" class="contact-here u-fr"><img style="margin-bottom:9px;" src="img/ico-mail.png">Contactar<br> aqu&iacute; <span class="caret"></span></a>
 				</div>
-				<div class="clear h20px"></div>
-				<div class="map mobile-b">
-					<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3596.7466069752254!2d-100.33496049206542!3d25.646534142268596!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8662be6cf41998b9%3A0x85d1e4912d3acf3c!2sHospital+Zambrano+Hellion!5e0!3m2!1sen!2s!4v1423837820842" width="420" height="340" frameborder="0" style="border:0"></iframe>
+			</div>
+		</div>
+		<div class="row">
+			<div class="similar">
+				<h5>Propiedades Similares</h5>
+				<div class="similar-item">
+					<a class="image" href="#"><img src="img/lorempixelsimilar.png" alt="Item relacionado"></a>
+					<a href="#" class="go-to-property">Ver propiedad</a>
 				</div>
-				<div class="clear h20px mobile-b"></div>
-				<div class="similar">
-					<h5>Propiedades Similares</h5>
-					<div class="similar-item">
-						<a class="image" href="#"><img src="img/lorempixelsimilar.png" alt="Item relacionado"></a>
-						<a href="#" class="go-to-property">Ver propiedad</a>
-					</div>
-					<div class="similar-item">
-						<a class="image" href="#"><img src="img/lorempixelsimilar.png" alt="Item relacionado"></a>
-						<a href="#" class="go-to-property">Ver propiedad</a>
-					</div>
-					<div class="similar-item">
-						<a class="image" href="#"><img src="img/lorempixelsimilar.png" alt="Item relacionado"></a>
-						<a href="#" class="go-to-property">Ver propiedad</a>
-					</div>
+				<div class="similar-item">
+					<a class="image" href="#"><img src="img/lorempixelsimilar.png" alt="Item relacionado"></a>
+					<a href="#" class="go-to-property">Ver propiedad</a>
 				</div>
+				<div class="similar-item">
+					<a class="image" href="#"><img src="img/lorempixelsimilar.png" alt="Item relacionado"></a>
+					<a href="#" class="go-to-property">Ver propiedad</a>
+				</div>
+				<div class="similar-item">
+					<a class="image" href="#"><img src="img/lorempixelsimilar.png" alt="Item relacionado"></a>
+					<a href="#" class="go-to-property">Ver propiedad</a>
+				</div>
+				<div class="similar-item">
+					<a class="image" href="#"><img src="img/lorempixelsimilar.png" alt="Item relacionado"></a>
+					<a href="#" class="go-to-property">Ver propiedad</a>
+				</div>
+				<div class="similar-item">
+					<a class="image" href="#"><img src="img/lorempixelsimilar.png" alt="Item relacionado"></a>
+					<a href="#" class="go-to-property">Ver propiedad</a>
+				</div>
+
 			</div>
 		</div>
 	</div>

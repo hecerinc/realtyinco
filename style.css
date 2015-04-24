@@ -475,7 +475,7 @@ h5{
 }
 .similar-item{
 	float: left;
-	width: 33%;
+	width: 16%;
 }
 .similar-item:first-child{
 	margin-left: 0;
@@ -867,6 +867,72 @@ ul.details li.name a{
 }
 .advanced-search-form fieldset{
 	margin-bottom: 20px;
+}
+.description-spec{
+	margin: 50px 0;
+}
+.description-spec .legend, .amenities-list .legend{
+	text-transform: uppercase;
+	font-weight: 800;
+	font-size: 1.5rem;
+	text-align: center;
+	margin-bottom: 35px;
+}
+.calc-sub, .calc-hero{
+	text-transform: uppercase;
+	font-weight: 800;
+	margin-bottom: -5px;	
+}
+.calc-hero{
+	font-size: 3rem;
+	margin-top: 5px;
+}
+.calc-area{
+	margin: 0 auto;
+	max-width: 420px;
+	margin-bottom: 40px;
+}
+.calc-ico{
+	margin-right: 20px;
+}
+.calc-sub{
+	color: #EE322C;
+}
+.click-here-calc{
+	font-weight: 800;
+	font-size: 1.8rem;
+	color: #333;
+}
+.map-calc .right-side{
+	width: 490px;
+	margin-top: 40px;
+}
+.map-calc{
+	margin-bottom: 40px;
+}
+.amenities-list{
+	padding:22px 100px 30px;
+	box-sizing:border-box;
+	border:1px solid #ddd;
+}
+.amenities-list li{
+	list-style: none;
+}
+.amenity-ico.true{
+	background:url(img/ico-amenity-check.png) no-repeat;
+	width: 15px;
+	height: 14px;
+	display: inline-block;
+}
+.amenity-ico.false{
+	background:url(img/ico-amenity-false.png) no-repeat;
+	width: 14px;
+	height: 15px;
+	display: inline-block;
+}
+.list-container .col{
+	float: left;
+	width: 33%;
 }
 /* Media Queries
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
