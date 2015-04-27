@@ -24,7 +24,7 @@
 							</select>
 						</li>
 					</ul>
-					<ul class="u-fr">
+					<ul class="u-fr right-side">
 						<li>
 							<label for="#">Rango de precios</label>
 							<select style="display:none;" class="select-2" name="rango" id="rango">
@@ -35,7 +35,7 @@
 							<div class="u-fl" style="margin-left: 10px;">
 								<input type="radio" name="vista" id="rapida">
 								<label for="rapida">Vista r&aacute;pida</label>
-								<div class="clear"></div>
+								<div class="clear no-mobile-b"></div>
 								<input type="radio" name="vista" id="normal">
 								<label for="normal">Vista normal</label>
 							</div>
@@ -44,37 +44,37 @@
 				</fieldset>
 				<fieldset class="property">
 					<legend>Especificaciones de la propiedad</legend>
-					<div class="u-fl">
+					<div class="u-fl  no-float-m">
 						<label for="" style="margin-bottom:20px;">m<sup>2</sup> de terreno</label>
-						<div class="u-fr">
-							<select style="display:none;" name="" id="" class="select-3 lowerm">
+						<div class="u-fr no-float-m">
+							<select style="display:none;" name="metrost-lower" id="metrost-lower" class="select-3 lowerm">
 								<option value="1">Default</option>
 							</select>
 							<p style="display:inline;">a</p>
-							<select style="display:none;" name="" id="" class="select-3 upperm">
+							<select style="display:none;" name="metrost-upper" id="metrost-upper" class="select-3 upperm">
 								<option value="1">Default</option>
 							</select>
 						</div>
 						<div class="clear"></div>
 						<label for="" style="margin-bottom:20px;">m<sup>2</sup> de construcci&oacute;n</label>
-						<div class="u-fr">
-							<select style="display:none;" name="" id="" class="select-3 lowerm">
+						<div class="u-fr no-float-m">
+							<select style="display:none;" name="metrosc-lower" id="metrosc-lower" class="select-3 lowerm">
 								<option value="1">Default</option>
 							</select>
 							<p style="display:inline;">a</p>
-							<select style="display:none;" name="" id="" class="select-3 upperm">
+							<select style="display:none;" name="metrosc-upper" id="metrosc-upper" class="select-3 upperm">
 								<option value="1">Default</option>
 							</select>
 						</div>
 						<div class="clear"></div>
-						<div class="u-fr">
+						<div class="u-fr no-float-m">
 							<input type="checkbox" name="fotos" id="fotos">
 							<label for="fotos">Fotograf&iacute;as</label>
 							<input type="checkbox" name="videos" id="videos">
 							<label for="videos">Videos</label>
 						</div>
 					</div>
-					<ul class="u-fr property-right-side">
+					<ul class="u-fr property-right-side no-float-m">
 						<li>
 							<label for="plantas">plantas</label>
 							<select style="display:none;" class="select-3" name="plantas" id="plantas">
@@ -97,6 +97,7 @@
 				</fieldset>
 				<fieldset class="amenities">
 					<legend>Elige amenidades</legend>
+					<!-- Esta parte scalea con los li's, *NO* agregar mas ul.check-list, sino agrega elementos a cada columna -->
 					<ul class="check-list">
 						<li>
 							<input type="checkbox" name="alberca" id="alberca">

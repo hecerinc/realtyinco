@@ -942,6 +942,9 @@ ul.details li.name a{
 	float: left;
 	margin-right: 30px;
 }
+.advanced-search-form #select-rango{
+	margin-right: 0;
+}
 /* Media Queries
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 /*
@@ -1077,7 +1080,27 @@ fieldset.property > .u-fl .u-fr .customSelect:last-child{
 	.asesores .row .asesor:first-child{
 		margin-bottom: 15px;
 	}
-	
+	.advanced-search-form .submit-btn{
+		width: 100%;
+	}
+	.advanced-search-form{
+		margin-bottom: 0;
+	}
+	.advanced-search-form .check-list{
+		margin-right: 40px;
+	}
+	#select-metrosc-upper, #select-metrost-upper{
+		margin-bottom: 20px;
+	}
+	.property-right-side{
+		margin-right: 0;
+	}
+	.property-right-side label{
+		margin: 8px 0 0;
+	}
+	.no-float-m{
+		float: none;
+	}
 }
 @media(max-width:1120px){
 	.btn-break{
@@ -1207,6 +1230,31 @@ fieldset.property > .u-fl .u-fr .customSelect:last-child{
 @media(min-width:1116px){
 	.specialbreak{
 		display: none;
+	}
+}
+@media(max-width: 1000px){
+	.advanced-search-form .right-side #normal{
+		margin-left: 20px;
+	}
+}
+@media(max-width: 900px){
+	.advanced-search-form #select-rango{
+		width: 140px !important;
+	}
+}
+@media(max-width: 780px){
+	.advanced-search-form .first .left-side, .advanced-search-form .first .right-side{
+		float: none;
+		margin: 0 auto;
+		width: 280px;
+	}
+}
+@media(max-width: 550px){
+	.advanced-search-form #select-rango.customSelect{
+		width: 100% !important;
+	}
+	.advanced-search-form .customSelect{
+		margin-right: 0;
 	}
 }
 /* Larger than Desktop HD */
