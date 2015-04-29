@@ -8,7 +8,10 @@
 						<li>
 							<label for="#">Tipo de propiedad</label>
 							<select style="display:none;" class="select-1" name="propiedad" id="propiedad">
-								<option value="1">Default</option>
+								<option value="1">Casa/Departamento</option>
+								<option value="2">Locales/Oficinas</option>
+								<option value="3">Bodegas</option>
+								<option value="4">Terrenos</option>
 							</select>
 						</li>
 						<li>
@@ -25,6 +28,12 @@
 						</li>
 					</ul>
 					<ul class="u-fr right-side">
+						<li>
+							<label for="estado">Estado</label>
+							<select name="estado" id="estado" class="select-2" style="display:none;">
+								<option value="1">Default</option>
+							</select>
+						</li>
 						<li>
 							<label for="#">Rango de precios</label>
 							<select style="display:none;" class="select-2" name="rango" id="rango">
@@ -148,7 +157,8 @@
 			$("select.select-1").each(function() {					
 				var sb = new SelectBox({
 					selectbox: $(this),
-					width: 140
+					width: 140,
+					changeCallback: detectProperty
 					// height: 25
 				});
 			});
@@ -167,5 +177,19 @@
 				});
 			});
 		});
+		function detectProperty(){
+			var value = $(this.selectbox).val();
+			switch(value){
+				case 1:
+				break;
+				case 2:
+				break;
+				case 3:
+				break;
+				case 4:
+				break;
+				default:
+			}
+		}
 	</script>
 <?php require "footer.php" ?>

@@ -945,6 +945,10 @@ ul.details li.name a{
 .advanced-search-form #select-rango{
 	margin-right: 0;
 }
+.advanced-search-form #select-estado{
+	float: right;
+	margin-right: 0;
+}
 /* Media Queries
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 /*
