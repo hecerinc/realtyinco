@@ -124,20 +124,20 @@ Entre las recámaras se cuenta con un cuarto de televisión y a un lado un close
 </p>
 		</div>
 		<div class="row map-calc">
-			<div class="u-fl">
+ 			<div class="gMap u-fl">
 				<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3596.7466069752254!2d-100.33496049206542!3d25.646534142268596!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8662be6cf41998b9%3A0x85d1e4912d3acf3c!2sHospital+Zambrano+Hellion!5e0!3m2!1sen!2s!4v1423837820842" width="420" height="340" frameborder="0" style="border:0"></iframe>
 			</div>
 			<div class="u-fr right-side">
 				<div class="calc-area u-cf">
 					<img src="img/ico-calc.png" alt="Calculadora" class="calc-ico u-fl">
-					<div class="u-fr">
+					<div class="u-fr calculator-text">
 						<h1 class="calc-hero">Calculadora</h1>
 						<p class="calc-sub">Te ayudamos a conseguir el cr&eacute;dito</p>
 						<a href="#" class="click-here-calc">Da click aqu&iacute; ›</a>
 					</div>
 				</div>
 				<div class="mas-informacion u-cf">
-					<div class="u-fl" style="padding:10px 0">
+					<div class="u-fl top-info" style="padding:10px 0">
 						<div class="title">&iquest;M&aacute;s informes? Contacta a un asesor</div>
 						<img class="u-fl little-man" src="img/little-man-ico.png" alt="Contacta a un asesor">
 						<p><span style="font-weight:600;">Gerencia de Ventas:</span><br>01-81-8338-9668, 01-81-8220-8480 <br>y 84, Ext. 101</p>
@@ -197,12 +197,19 @@ Entre las recámaras se cuenta con un cuarto de televisión y a un lado un close
 					dots: true
 				  }
 				},
+				// {
+				//   breakpoint: 600,
+				//   settings: {
+				// 	slidesToShow: 2,
+				// 	slidesToScroll: 2
+				//   }
+				// },
 				{
-				  breakpoint: 600,
-				  settings: {
-					slidesToShow: 2,
-					slidesToScroll: 2
-				  }
+					breakpoint: 550,
+					settings:{
+						slidesToShow: 4,
+						slidesToScroll: 2
+					}
 				},
 				{
 				  breakpoint: 480,

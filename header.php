@@ -105,13 +105,17 @@
 	<div class="sub-nav-band">
 		<div class="container">
 			<div class="row">
-				<p class="realty-world u-fl">Realty World Inco</p>
-				<p class="address u-fl"> &nbsp;&nbsp;Tel. 01 (81) 8220 8480 y 84 Ext. 101</p>
+				<div class="text-info u-cf u-fl">
+					<p class="realty-world u-fl">Realty World Inco</p>
+					<p class="address u-fl"> &nbsp;&nbsp;Tel. 01 (81) 8220 8480 y 84 Ext. 101</p>
+				</div>
 				<div class="clear h10px btn-break"></div>
-				<a href="#" class="btn-attention">Atenci&oacute;n a clientes</a>
-				<a href="#" class="btn-register-property">Registra propiedad</a>
-				<a href="#" class="btn-search-property">Busco propiedad</a>
-				<a href="#" class="fb no-mobile">Link to Facebook</a>
+				<div class="home-btns u-fl">
+					<a href="#" class="btn-attention">Atenci&oacute;n a clientes</a>
+					<a href="#" class="btn-register-property">Registra propiedad</a>
+					<a href="#" class="btn-search-property">Busco propiedad</a>
+					<a href="#" class="fb no-mobile">Link to Facebook</a>
+				</div>
 				<div class="clear h10px btn-break"></div>
 			</div>
 		</div>

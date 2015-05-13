@@ -240,6 +240,7 @@ p.realty-world{
 	text-transform: uppercase;
 	color: #EE282D;
 	font-weight: 800;
+	max-width: 160px;
 }
 .sub-nav-band .address{
 	letter-spacing: 0;
@@ -460,7 +461,7 @@ ul{
 	font-weight: 800;
 	text-transform: uppercase;
 	padding:16px 5px 0 10px;
-	line-height: 16px;
+	line-height: 1em;
 }
 .contact-here img{
 	display: block;
@@ -893,7 +894,11 @@ ul.details li.name a{
 	margin-bottom: 40px;
 }
 .calc-ico{
-	margin-right: 20px;
+	margin-right: 4.83091787%;
+	width: 17.874396135265%;
+}
+.calculator-text{
+	width: 77.29468599033%;
 }
 .calc-sub{
 	color: #EE322C;
@@ -912,6 +917,7 @@ ul.details li.name a{
 }
 .amenities-list{
 	padding:22px 100px 30px;
+	margin-top:40px;
 	box-sizing:border-box;
 	border:1px solid #ddd;
 }
@@ -945,9 +951,24 @@ ul.details li.name a{
 .advanced-search-form #select-rango{
 	margin-right: 0;
 }
-.advanced-search-form #select-estado{
+.advanced-search-form #select-estado, .advanced-search-form #select-municipio{
 	float: right;
 	margin-right: 0;
+}
+.advanced-search-form .right-side #normal{
+	margin-left: 20px;
+}
+.advanced-search-form .customSelect{
+	display: inline-block !important;
+}
+.advanced-search-form .first .left-side .customSelect, .advanced-search-form .property-right-side .customSelect{
+	float: right;
+}
+fieldset.property > .u-fl .u-fr .customSelect:last-child{
+	margin-right: 0;
+}
+.metros1, .metros2{
+	width: 100%;
 }
 /* Media Queries
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
@@ -973,19 +994,6 @@ there.
 .customSelect{
 	float: none;
 }
-.four.columns.asesor{
-	margin-left: 2%;
-	width: 31.2%;
-}
-.advanced-search-form .customSelect{
-	display: inline-block !important;
-}
-.advanced-search-form .first .left-side .customSelect, .advanced-search-form .property-right-side .customSelect{
-	float: right;
-}
-fieldset.property > .u-fl .u-fr .customSelect:last-child{
-	margin-right: 0;
-}
 /* Larger than mobile */
 @media (min-width: 400px) {}
 
@@ -1001,9 +1009,12 @@ fieldset.property > .u-fl .u-fr .customSelect:last-child{
 	}
 	.property-search .submit{
 		margin: 0;
-		width: 100%;		
+		width: 100%;
 	}
-	.selects .select-left, .selects .select-right, .btn-search, .address{
+	.selects .select-left, 
+	.selects .select-right, 
+	.btn-search, 
+	.address{
 		float: none;
 	}
 	.property-search{
@@ -1022,6 +1033,12 @@ fieldset.property > .u-fl .u-fr .customSelect:last-child{
 		padding: 10px 0 0;
 		background-size:30px;
 	}
+	.asesores .row{
+		margin-bottom: 0;
+	}
+	.asesor{
+		margin-bottom: 20px;
+	}
 	.main-nav{
 		padding-bottom: 20px;
 	}
@@ -1031,23 +1048,18 @@ fieldset.property > .u-fl .u-fr .customSelect:last-child{
 	.sub-nav-band .row{
 		padding:0 0 20px;
 	}
-	.btn-register-property, .btn-search-property, .btn-attention{
-		margin: 0 auto;
-		display: block;
-		box-sizing:border-box;
-		width: 162px;
-	}
-	.btn-register-property, .btn-attention{
-		margin-bottom: 5px;
-	}
 	.address{
 		margin-bottom: 10px;
 		text-align: center;
 	}
-	.realty-world{
+	p.realty-world{
 		float: none;
 		text-align: center;
 		margin-top: 20px;
+		max-width: 100%;
+	}
+	div.text-info{
+		width: 70%;
 	}
 	.casas .columns{
 		text-align: center;
@@ -1102,13 +1114,21 @@ fieldset.property > .u-fl .u-fr .customSelect:last-child{
 	.property-right-side label{
 		margin: 8px 0 0;
 	}
+	.asesor .email{
+		display: inline-block !important;
+	}
+	.advanced-search-form .first ul.left-side, 
+	.advanced-search-form .first ul.right-side{
+		width: 100%;
+	}
+	.advanced-search-form .customSelect{
+		margin-right: 0;
+	}
+	.tipodevistas{
+		margin-top: 20px;
+	}
 	.no-float-m{
 		float: none;
-	}
-}
-@media(max-width:1120px){
-	.btn-break{
-		display: block;
 	}
 }
 /* Smaller than tablet */
@@ -1177,23 +1197,63 @@ fieldset.property > .u-fl .u-fr .customSelect:last-child{
 		width: initial;
 	}
 }
-@media (max-width: 1000px){
-	.recommend .i-text{
+/*@media(max-width: 900px){
+	.advanced-search-form #select-rango{
+		width: 140px !important;
+	}
+}*/
+@media(max-width: 780px){
+	.advanced-search-form .first .left-side, .advanced-search-form .first .right-side{
+		float: none;
+		margin: 0 auto;
+		width: 85%;
+	}
+	.advanced-search-form .first .customSelect{
+		width: 50% !important;
+		margin-right: 0;
+	}
+	.advanced-search-form #select-rango{
 		float: right;
 	}
+
 }
-@media (max-width: 1115px){
-	.logo{
-		float: none !important;
+@media(max-width: 870px){
+	.asesor .email{
+		display: none;
+	}
+	.property-spec{
+		width: 100%;
+	}
+	.metros1 > div, .metros2 > div{
+		width: 70%;
+	}
+	.property-spec .customSelect{
+		width: 45% !important;
+	}
+	.property-right-side{
+		margin-right: 0;
+	}
+	.property-right-side li{
+		float: left;
+	}
+	.fotosyvideos{
+		float: none;
 		margin: 0 auto;
 	}
-	.six.columns.calculator{
+}
+@media(max-width: 550px){
+	.metros1 > div, .metros2 > div{
+		width: 100%;
+	}
+	.smaller-container .advanced-search-form .customSelect{
 		width: 100% !important;
-		margin: 0;
 	}
 }
 /* Larger than desktop */
 @media (min-width: 1000px) {
+	.recommend .i-text{
+		float: right;
+	}
 	.mobile, .mobile-b{
 		display: none !important;
 	}
@@ -1209,6 +1269,14 @@ fieldset.property > .u-fl .u-fr .customSelect:last-child{
 }
 /* Smaller than desktop */
 @media(max-width: 1115px){
+	.logo{
+		float: none !important;
+		margin: 0 auto;
+	}
+	.six.columns.calculator{
+		width: 100% !important;
+		margin: 0;
+	}
 	.specialbreak{
 		display: block;
 	}
@@ -1222,13 +1290,52 @@ fieldset.property > .u-fl .u-fr .customSelect:last-child{
 		float: none;
 		width: 100%;
 	}
+	.found .top{		
+		float: right;
+		width: 50%;
+		position: relative;
+		top: 60px;
+		z-index:100;
+	}
+	.btn-mas-info{
+		/*float: none;*/
+		/*margin: 0 auto;*/
+		margin-right: 40px;
+		margin-top: 90px;
+	}
+	.found .bottom{
+		/*background:none;*/
+		border:0 none;
+		/*z-index: 0;*/
+		position: relative;
+		top: -30px;
+	}
+	.found .bottom .right{
+		display: none;
+	}
+}
+@media(max-width: 1000px){
+	.found .bottom{
+		background: none;
+	}	
 	.btn-mas-info{
 		float: none;
 		margin: 0 auto;
 	}
-	.found .bottom{
-		background:none;
-		border:0 none;
+	.found .top{
+		float: none;
+		width: 100%;
+		position:initial;
+	}
+	.home-btns{
+		width: 520px;
+		margin: 0 auto;
+		float: none;
+	}
+	.text-info{
+		width: 382px;
+		margin: 0 auto;
+		float: none;
 	}
 }
 @media(min-width:1116px){
@@ -1236,30 +1343,120 @@ fieldset.property > .u-fl .u-fr .customSelect:last-child{
 		display: none;
 	}
 }
-@media(max-width: 1000px){
-	.advanced-search-form .right-side #normal{
-		margin-left: 20px;
+@media(max-width:1120px){
+	.btn-break{
+		display: block;
 	}
 }
-@media(max-width: 900px){
-	.advanced-search-form #select-rango{
-		width: 140px !important;
+@media(max-width: 1130px){
+	.one, .two{
+		font-size: 1.4rem;
 	}
 }
-@media(max-width: 780px){
-	.advanced-search-form .first .left-side, .advanced-search-form .first .right-side{
-		float: none;
+@media(max-width: 960px){
+	.pricing .one, .pricing .two{
+		float:none;
+		font-size: 1.5rem;
+		width: 190px;
 		margin: 0 auto;
-		width: 280px;
+		padding: 0;
+		/*text-align: center;*/
+	}
+	.pricing .one{
+		border:0 none;
+	}
+	.pricing .legend{
+		padding:0 20px;
+		box-sizing: border-box;
 	}
 }
-@media(max-width: 550px){
-	.advanced-search-form #select-rango.customSelect{
-		width: 100% !important;
+@media(max-width: 760px){
+	.pricing .legend{
+		font-size: 1.9rem;
 	}
-	.advanced-search-form .customSelect{
-		margin-right: 0;
+}
+@media(max-width: 730px){
+	.specific .columns{
+		float: none;
+		width: 100%;
+		margin: 0 auto;
+	}
+}
+@media(max-width: 615px){
+	.map-calc .right-side{
+		width: 100%;
+	}
+}
+@media(max-width: 600px){
+	.row.amenities-list{
+		padding: 22px 0 30px;
+
+	}
+	.amenities-list .list-container{
+		width: 80%;
+		margin: 0 auto;
+	}
+}
+@media(max-width: 380px){
+	.amenities-list .list-container ul{
+		float: none;
+		width: 120px;
+		margin: 0 auto;
+	}
+}
+@media(max-width: 570px){
+	.mas-informacion{
+		padding: 0;
+	}
+	.contact-here{
+		height: initial;
+		width: 100%;
+		padding: 10px 0;
+		text-align: center;
+		border-bottom-left-radius: 10px;
+		border-bottom-right-radius: 10px;
+		/*float: none;*/
+	}
+	.top-info{
+		width: 100%;
+		padding:20px 40px !important;
+	}
+	.contact-here br{
+		display: none;
+	}
+}
+@media(max-width: 470px){
+	.calc-hero{
+		font-size: 2.7rem;
+	}
+	.calc-sub{
+		font-size: 1.4rem;
+
+	}
+	.click-here-calc{
+		font-size: 1.3rem;
+	}
+}
+/* Menu buttons */
+@media(min-width: 551px) and (max-width:646px){
+	
+}
+@media(max-width: 646px){
+	.btn-register-property, .btn-search-property, .btn-attention{
+		margin: 0 auto;
+		display: block;
+		box-sizing:border-box;
+		width: 162px;
+	}
+	.home-btns{
+		width: initial;
+	}
+	.btn-register-property, .btn-attention{
+		margin-bottom: 5px;
 	}
 }
 /* Larger than Desktop HD */
 @media (min-width: 1200px) {}
+.top-info{
+	box-sizing:border-box;
+}

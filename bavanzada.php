@@ -27,10 +27,16 @@
 							</select>
 						</li>
 					</ul>
-					<ul class="u-fr right-side">
+					<ul class="u-fr right-side" id="estate">
 						<li>
 							<label for="estado">Estado</label>
 							<select name="estado" id="estado" class="select-2" style="display:none;">
+								<option value="1">Default</option>
+							</select>
+						</li>
+						<li>
+							<label for="municipio">Municipio</label>
+							<select name="municipio" id="municipio" class="select-2" style="display:none;">
 								<option value="1">Default</option>
 							</select>
 						</li>
@@ -41,10 +47,9 @@
 							</select>
 						</li>
 						<li>
-							<div class="u-fl" style="margin-left: 10px;">
+							<div class="u-fl tipodevistas">
 								<input type="radio" name="vista" id="rapida">
 								<label for="rapida">Vista r&aacute;pida</label>
-								<div class="clear no-mobile-b"></div>
 								<input type="radio" name="vista" id="normal">
 								<label for="normal">Vista normal</label>
 							</div>
@@ -53,30 +58,32 @@
 				</fieldset>
 				<fieldset class="property">
 					<legend>Especificaciones de la propiedad</legend>
-					<div class="u-fl  no-float-m">
-						<label for="" style="margin-bottom:20px;">m<sup>2</sup> de terreno</label>
-						<div class="u-fr no-float-m">
-							<select style="display:none;" name="metrost-lower" id="metrost-lower" class="select-3 lowerm">
-								<option value="1">Default</option>
-							</select>
-							<p style="display:inline;">a</p>
-							<select style="display:none;" name="metrost-upper" id="metrost-upper" class="select-3 upperm">
-								<option value="1">Default</option>
-							</select>
+					<div class="u-fl no-float-m property-spec">
+						<div class="metros1 u-cf">
+							<label class="u-fl" style="margin-bottom:20px;">m<sup>2</sup> de terreno</label>
+							<div class="u-fr no-float-m">
+								<select style="display:none;" name="metrost-lower" id="metrost-lower" class="select-3 lowerm">
+									<option value="1">Default</option>
+								</select>
+								<p style="display:inline;">a</p>
+								<select style="display:none;" name="metrost-upper" id="metrost-upper" class="select-3 upperm">
+									<option value="1">Default</option>
+								</select>
+							</div>
 						</div>
-						<div class="clear"></div>
-						<label for="" style="margin-bottom:20px;">m<sup>2</sup> de construcci&oacute;n</label>
-						<div class="u-fr no-float-m">
-							<select style="display:none;" name="metrosc-lower" id="metrosc-lower" class="select-3 lowerm">
-								<option value="1">Default</option>
-							</select>
-							<p style="display:inline;">a</p>
-							<select style="display:none;" name="metrosc-upper" id="metrosc-upper" class="select-3 upperm">
-								<option value="1">Default</option>
-							</select>
+						<div class="metros2 u-cf">
+							<label for="" style="margin-bottom:20px;">m<sup>2</sup> de construcci&oacute;n</label>
+							<div class="u-fr no-float-m">
+								<select style="display:none;" name="metrosc-lower" id="metrosc-lower" class="select-3 lowerm">
+									<option value="1">Default</option>
+								</select>
+								<p style="display:inline;">a</p>
+								<select style="display:none;" name="metrosc-upper" id="metrosc-upper" class="select-3 upperm">
+									<option value="1">Default</option>
+								</select>
+							</div>
 						</div>
-						<div class="clear"></div>
-						<div class="u-fr no-float-m">
+						<div class="u-fr no-float-m fotosyvideos">
 							<input type="checkbox" name="fotos" id="fotos">
 							<label for="fotos">Fotograf&iacute;as</label>
 							<input type="checkbox" name="videos" id="videos">

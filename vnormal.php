@@ -41,7 +41,7 @@
 									<li><strong>&Aacute;rea de terreno:</strong>355m<sup>2</sup></li>
 								</ul>
 								<a href="#" class="btn-mas-info u-fr"><span></span> M&aacute;s informaci&oacute;n</a>
-								<ul class="right u-fr no-mobile-b">
+								<ul class="right u-fr">
 									<li><strong>Construcci&oacute;n:</strong> 431 m<sup>2</sup></li>
 									<li><strong>Frente:</strong> 16 m</li>
 									<li><strong>Plantas:</strong> 2</li>
@@ -86,7 +86,7 @@
 									<li><strong>&Aacute;rea de terreno:</strong>355m<sup>2</sup></li>
 								</ul>
 								<a href="#" class="btn-mas-info u-fr"><span></span> M&aacute;s informaci&oacute;n</a>
-								<ul class="right u-fr no-mobile-b">
+								<ul class="right u-fr">
 									<li><strong>Construcci&oacute;n:</strong> 431 m<sup>2</sup></li>
 									<li><strong>Frente:</strong> 16 m</li>
 									<li><strong>Plantas:</strong> 2</li>
@@ -129,7 +129,7 @@
 									<li><strong>&Aacute;rea de terreno:</strong>355m<sup>2</sup></li>
 								</ul>
 								<a href="#" class="btn-mas-info u-fr"><span></span> M&aacute;s informaci&oacute;n</a>
-								<ul class="right u-fr no-mobile-b">
+								<ul class="right u-fr">
 									<li><strong>Construcci&oacute;n:</strong> 431 m<sup>2</sup></li>
 									<li><strong>Frente:</strong> 16 m</li>
 									<li><strong>Plantas:</strong> 2</li>
@@ -172,7 +172,7 @@
 									<li><strong>&Aacute;rea de terreno:</strong>355m<sup>2</sup></li>
 								</ul>
 								<a href="#" class="btn-mas-info u-fr"><span></span> M&aacute;s informaci&oacute;n</a>
-								<ul class="right u-fr no-mobile-b">
+								<ul class="right u-fr">
 									<li><strong>Construcci&oacute;n:</strong> 431 m<sup>2</sup></li>
 									<li><strong>Frente:</strong> 16 m</li>
 									<li><strong>Plantas:</strong> 2</li>

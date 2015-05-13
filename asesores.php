@@ -11,7 +11,7 @@
 					<li>Asesor Inmobiliario</li>
 					<li>Tel: 01-81-8220-8480 y 84 ext. 101</li>
 					<li>Fax: 01-81-8220-8480</li>
-					<li>E-mail: <a href="mailto:jaimeas@realtyworldinco.com">jaimeas@realtyworldinco.com</a></li>
+					<li class="email">E-mail: <a href="mailto:jaimeas@realtyworldinco.com">jaimeas@realtyworldinco.com</a></li>
 				</ul>
 			</div>
 			<div class="four columns asesor">
@@ -21,7 +21,7 @@
 					<li>Asesor Inmobiliario</li>
 					<li>Tel: 01-81-8220-8480 y 84 ext. 101</li>
 					<li>Fax: 01-81-8220-8480</li>
-					<li>E-mail: <a href="mailto:jaimeas@realtyworldinco.com">jaimeas@realtyworldinco.com</a></li>
+					<li class="email">E-mail: <a href="mailto:jaimeas@realtyworldinco.com">jaimeas@realtyworldinco.com</a></li>
 				</ul>
 			</div>	
 			<div class="four columns asesor">
@@ -31,7 +31,7 @@
 					<li>Asesor Inmobiliario</li>
 					<li>Tel: 01-81-8220-8480 y 84 ext. 101</li>
 					<li>Fax: 01-81-8220-8480</li>
-					<li>E-mail: <a href="mailto:jaimeas@realtyworldinco.com">jaimeas@realtyworldinco.com</a></li>
+					<li class="email">E-mail: <a href="mailto:jaimeas@realtyworldinco.com">jaimeas@realtyworldinco.com</a></li>
 				</ul>
 			</div>
 		</div>
@@ -43,7 +43,7 @@
 					<li>Asesor Inmobiliario</li>
 					<li>Tel: 01-81-8220-8480 y 84 ext. 101</li>
 					<li>Fax: 01-81-8220-8480</li>
-					<li>E-mail: <a href="mailto:jaimeas@realtyworldinco.com">jaimeas@realtyworldinco.com</a></li>
+					<li class="email">E-mail: <a href="mailto:jaimeas@realtyworldinco.com">jaimeas@realtyworldinco.com</a></li>
 				</ul>
 			</div>
 			<div class="four columns asesor">
@@ -53,7 +53,7 @@
 					<li>Asesor Inmobiliario</li>
 					<li>Tel: 01-81-8220-8480 y 84 ext. 101</li>
 					<li>Fax: 01-81-8220-8480</li>
-					<li>E-mail: <a href="mailto:jaimeas@realtyworldinco.com">jaimeas@realtyworldinco.com</a></li>
+					<li class="email">E-mail: <a href="mailto:jaimeas@realtyworldinco.com">jaimeas@realtyworldinco.com</a></li>
 				</ul>
 			</div>	
 			<div class="four columns asesor">
@@ -63,7 +63,7 @@
 					<li>Asesor Inmobiliario</li>
 					<li>Tel: 01-81-8220-8480 y 84 ext. 101</li>
 					<li>Fax: 01-81-8220-8480</li>
-					<li>E-mail: <a href="mailto:jaimeas@realtyworldinco.com">jaimeas@realtyworldinco.com</a></li>
+					<li class="email">E-mail: <a href="mailto:jaimeas@realtyworldinco.com">jaimeas@realtyworldinco.com</a></li>
 				</ul>
 			</div>
 		</div>
@@ -75,7 +75,7 @@
 					<li>Asesor Inmobiliario</li>
 					<li>Tel: 01-81-8220-8480 y 84 ext. 101</li>
 					<li>Fax: 01-81-8220-8480</li>
-					<li>E-mail: <a href="mailto:jaimeas@realtyworldinco.com">jaimeas@realtyworldinco.com</a></li>
+					<li class="email">E-mail: <a href="mailto:jaimeas@realtyworldinco.com">jaimeas@realtyworldinco.com</a></li>
 				</ul>
 			</div>
 			<div class="four columns asesor">
@@ -85,7 +85,7 @@
 					<li>Asesor Inmobiliario</li>
 					<li>Tel: 01-81-8220-8480 y 84 ext. 101</li>
 					<li>Fax: 01-81-8220-8480</li>
-					<li>E-mail: <a href="mailto:jaimeas@realtyworldinco.com">jaimeas@realtyworldinco.com</a></li>
+					<li class="email">E-mail: <a href="mailto:jaimeas@realtyworldinco.com">jaimeas@realtyworldinco.com</a></li>
 				</ul>
 			</div>	
 			<div class="four columns asesor">
@@ -95,7 +95,7 @@
 					<li>Asesor Inmobiliario</li>
 					<li>Tel: 01-81-8220-8480 y 84 ext. 101</li>
 					<li>Fax: 01-81-8220-8480</li>
-					<li>E-mail: <a href="mailto:jaimeas@realtyworldinco.com">jaimeas@realtyworldinco.com</a></li>
+					<li class="email">E-mail: <a href="mailto:jaimeas@realtyworldinco.com">jaimeas@realtyworldinco.com</a></li>
 				</ul>
 			</div>
 		</div>
