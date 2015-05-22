@@ -1,10 +1,22 @@
 <?php require "header.php"; ?>
-	<div class="container">
+	<div class="container bavanzada">
 		<h2>B&uacute;squeda Avanzada</h2>
 		<div class="smaller-container">
 			<form action="#" class="advanced-search-form">
 				<fieldset class="first">
 					<ul class="u-fl left-side">
+						<li>
+							<label for="estado">Estado</label>
+							<select name="estado" id="estado" class="select-1" style="display:none;">
+								<option value="1">Default</option>
+							</select>
+						</li>
+						<li>
+							<label for="municipio">Municipio</label>
+							<select name="municipio" id="municipio" class="select-1" style="display:none;">
+								<option value="1">Default</option>
+							</select>
+						</li>
 						<li>
 							<label for="#">Tipo de propiedad</label>
 							<select style="display:none;" class="select-1" name="propiedad" id="propiedad">
@@ -22,29 +34,17 @@
 								<option value="12">Plazas comerciales</option>
 							</select>
 						</li>
+					</ul>
+					<ul class="u-fr right-side" id="estate">
 						<li>
 							<label for="#">Renta o Venta</label>
-							<select style="display:none;" class="select-1" name="tipo" id="tipo">
+							<select style="display:none;" class="select-2" name="tipo" id="tipo">
 								<option value="1">Default</option>
 							</select>
 						</li>
 						<li>
 							<label for="#">Zona de propiedad</label>
-							<select style="display:none;" class="select-1" name="zona" id="zona">
-								<option value="1">Default</option>
-							</select>
-						</li>
-					</ul>
-					<ul class="u-fr right-side" id="estate">
-						<li>
-							<label for="estado">Estado</label>
-							<select name="estado" id="estado" class="select-2" style="display:none;">
-								<option value="1">Default</option>
-							</select>
-						</li>
-						<li>
-							<label for="municipio">Municipio</label>
-							<select name="municipio" id="municipio" class="select-2" style="display:none;">
+							<select style="display:none;" class="select-2" name="zona" id="zona">
 								<option value="1">Default</option>
 							</select>
 						</li>

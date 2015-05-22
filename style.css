@@ -305,6 +305,9 @@ p.realty-world{
 	margin-right: 20px;
 }
 /* End footer */
+.bavanzada{
+	margin-bottom: 4%;
+}
 .casas a, .building-image img{
 	display: block;
 	text-decoration: none;
@@ -940,18 +943,31 @@ ul.details li.name a{
 .advanced-search-form #select-rango{
 	margin-right: 0;
 }
-.advanced-search-form #select-estado, .advanced-search-form #select-municipio{
+/*.advanced-search-form #select-estado, .advanced-search-form #select-municipio{
 	float: right;
 	margin-right: 0;
 }
+*/
 .advanced-search-form .right-side #normal{
 	margin-left: 20px;
 }
 .advanced-search-form .customSelect{
 	display: inline-block !important;
 }
-.advanced-search-form .first .left-side .customSelect, .advanced-search-form .property-right-side .customSelect{
+.advanced-search-form .first .left-side .customSelect, 
+.advanced-search-form .first .right-side .customSelect,
+.advanced-search-form .property-right-side .customSelect{
 	float: right;
+	margin-right: 0;
+}
+.advanced-search-form .first li{
+	width: 100%;
+}
+.advanced-search-form .right-side{
+	width: 48%;
+}
+.advanced-search-form .right-side .customSelect{
+	width: 50% !important;
 }
 fieldset.property > .u-fl .u-fr .customSelect:last-child{
 	margin-right: 0;
@@ -1176,6 +1192,22 @@ there.
 		margin-top: 20px;
 	}
 	.no-float-m{
+		float: none;
+	}
+}
+@media(max-width: 630px){
+	.metros1 .u-fr, .metros2 .u-fr{
+		float: none;
+		margin-bottom: 20px;
+		clear:left;
+	}
+	.metros1 label, .metros2 label{
+		margin-bottom: 5px !important;
+	}
+}
+@media(max-width: 710px){
+	.advanced-search-form .property-right-side,
+	.advanced-search-form .property-right-side li{
 		float: none;
 	}
 }
