@@ -15,7 +15,7 @@
 						<td class="img" rowspan="2">
 							<img src="img/lorempixel.png" alt="Resultado #1">
 						</td>
-						<td>
+						<td class="parent">
 							<div class="top u-cf">
 								<div class="name">
 									<p>Casas - Zona Cumbres - Venta</p>
@@ -60,7 +60,7 @@
 						<td class="img" rowspan="2">
 							<img src="img/lorempixel.png" alt="Resultado #1">
 						</td>
-						<td>
+						<td class="parent">
 							<div class="top u-cf">
 								<div class="name">
 									<p>Casas - Zona Cumbres - Venta</p>
@@ -103,7 +103,7 @@
 						<td class="img" rowspan="2">
 							<img src="img/lorempixel.png" alt="Resultado #1">
 						</td>
-						<td>
+						<td class="parent">
 							<div class="top u-cf">
 								<div class="name">
 									<p>Casas - Zona Cumbres - Venta</p>
@@ -146,7 +146,7 @@
 						<td class="img" rowspan="2">
 							<img src="img/lorempixel.png" alt="Resultado #1">
 						</td>
-						<td>
+						<td class="parent">
 							<div class="top u-cf">
 								<div class="name">
 									<p>Casas - Zona Cumbres - Venta</p>
@@ -192,5 +192,41 @@
 		</div>
 	</div>
 	<!-- end content -->
+	<script>
+		$(function(){
+			checkWidth();
+			$(window).resize(function(){
+				checkWidth();
+			});
+		});
+		function checkWidth(){
+			var width = $(window).width();
+			if(width<530){
+				$('.bottom').each(function(){
+					var tr = $(this).parent().parent().prev();
+					var top = tr.find('.top');
+					var parent = tr.find('.parent');
+					var previous = parent.prev();
+					$(this).prepend(top);
+					parent.css('display', 'none');
+					previous.attr('rowspan', 1);
+				});
+				// var element = $('.action-btns').detach();
+				// $('.nameof').after(element);
+				// $('.second.columns').append($('.map'));
+			}
+			if(width>=530){
+				$('.bottom').each(function(){
+					var tr = $(this).parent().parent().prev();
+					var top = $(this).find('.top');
+					var parent = tr.find('.parent');
+					var previous = parent.prev();
+					parent.append(top);
+					parent.css('display', '');
+					previous.attr('rowspan', 2);
+				});
+			}
+		}
+	</script>
 
 <?php require "footer.php"; ?>

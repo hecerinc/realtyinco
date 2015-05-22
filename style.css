@@ -986,7 +986,22 @@ there.
 }
 /* Larger than mobile */
 @media (min-width: 400px) {}
-
+@media(max-width: 530px){
+	.results .bottom, .results .top{
+		padding: 0;
+	}
+	.results .top .prop-id p{
+		font-size: 1.5rem;
+		margin: 2px 0 7px;
+	}
+	.found td div.bottom{
+		position: initial;
+		top: 0;
+	}
+	.found td.img, .found td.img img{
+		width: 100%;
+	}
+}
 /* Larger than phablet (also point when grid becomes active) */
 @media (min-width: 550px) {}
 /* Smaller than phablet */
