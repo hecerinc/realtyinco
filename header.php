@@ -109,7 +109,7 @@
 					<p class="realty-world u-fl">Realty World Inco</p>
 					<p class="address u-fl"> &nbsp;&nbsp;Tel. 01 (81) 8220 8480 y 84 Ext. 101</p>
 				</div>
-				<div class="clear h10px btn-break"></div>
+				<div class="clear h10px"></div>
 				<div class="home-btns u-fl">
 					<a href="#" class="btn-attention">Atenci&oacute;n a clientes</a>
 					<a href="#" class="btn-register-property">Registra propiedad</a>
