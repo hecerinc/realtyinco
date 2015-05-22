@@ -60,20 +60,35 @@
 				<div class="clear h20px"></div>
 				<div class="pricing">
 					<p class="legend">Precio: 4,900,000.00 M.N.</p>
-					<ul class="one">
-						<li><strong>Tipo de operaci&oacute;n:</strong> Venta</li>
-						<li><strong>Tipo de inmueble:</strong> Casa</li>
-						<li><strong>Ubicaci&oacute;n:</strong> Zona Contry</li>
-						<li><strong>Colonia:</strong> Contry La Silla</li>
-						<li><strong>&Aacute;rea de terreno:</strong> 355 m<sup>2</sup></li>
-					</ul>
-					<ul class="two">
-						<li><strong>Construcci&oacute;n:</strong> 431 m<sup>2</sup></li>
-						<li><strong>Frente:</strong> 16 m</li>
-						<li><strong>Plantas:</strong> 2</li>
-						<li><strong>Rec&aacute;maras:</strong> 3</li>
-						<li><strong>Baños:</strong> 4 1/2</li>
-					</ul>
+					<div class="attribute-slider">
+						<div class="one att-slide">
+							<ul>
+								<li><strong>Tipo de operaci&oacute;n:</strong> Venta</li>
+								<li><strong>Tipo de inmueble:</strong> Casa</li>
+								<li><strong>Ubicaci&oacute;n:</strong> Zona Contry</li>
+								<li><strong>Colonia:</strong> Contry La Silla</li>
+								<li><strong>&Aacute;rea de terreno:</strong> 355 m<sup>2</sup></li>
+							</ul>
+						</div>
+						<div class="two att-slide">
+							<ul>
+								<li><strong>Construcci&oacute;n:</strong> 431 m<sup>2</sup></li>
+								<li><strong>Frente:</strong> 16 m</li>
+								<li><strong>Plantas:</strong> 2</li>
+								<li><strong>Rec&aacute;maras:</strong> 3</li>
+								<li><strong>Baños:</strong> 4 1/2</li>
+							</ul>
+						</div>
+						<div class="two att-slide">
+							<ul>
+								<li><strong>Construcci&oacute;n:</strong> 431 m<sup>2</sup></li>
+								<li><strong>Frente:</strong> 16 m</li>
+								<li><strong>Plantas:</strong> 2</li>
+								<li><strong>Rec&aacute;maras:</strong> 3</li>
+								<li><strong>Baños:</strong> 4 1/2</li>
+							</ul>
+						</div>
+					</div>
 					<div class="clear"></div>
 					<p class="id">Propiedad ID: 31-CV-25</p>
 				</div>
@@ -205,6 +220,20 @@ Entre las recámaras se cuenta con un cuarto de televisión y a un lado un close
 	<!-- end content -->
 <script>
 	$(function(){
+		$('.attribute-slider').slick({
+			dots:false,
+			infinite:false,
+			speed:300,
+			slidesToShow:2,
+			slidesToScroll:1,
+			centerMode:false,
+			responsive:[
+				{
+					breakpoint:961,
+					settings: 'unslick'
+				}
+			]
+		});
 		$('.property-slider').slick({
 			dots: false,
 			infinite: false,

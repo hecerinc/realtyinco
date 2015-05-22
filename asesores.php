@@ -34,8 +34,6 @@
 					<li class="email">E-mail: <a href="mailto:jaimeas@realtyworldinco.com">jaimeas@realtyworldinco.com</a></li>
 				</ul>
 			</div>
-		</div>
-		<div class="row">
 			<div class="four columns asesor">
 				<a href="#"><img src="img/asesor.png" alt="Nombre del asesor"></a>
 				<ul class="details">
@@ -66,8 +64,6 @@
 					<li class="email">E-mail: <a href="mailto:jaimeas@realtyworldinco.com">jaimeas@realtyworldinco.com</a></li>
 				</ul>
 			</div>
-		</div>
-		<div class="row">
 			<div class="four columns asesor">
 				<a href="#"><img src="img/asesor.png" alt="Nombre del asesor"></a>
 				<ul class="details">
