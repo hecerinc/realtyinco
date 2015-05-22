@@ -487,19 +487,7 @@ h5{
 	padding-right:25px;
 }
 /*Map*/
-.map{
-	position: relative;
-	height: 0;
-	overflow: hidden;
-	padding-bottom: 80.952380%;
-}
-.map iframe{
-	position: absolute;
-	top: 0;
-	left: 0;
-	width: 100% !important;
-	height: 100% !important;
-}
+
 .logo{
 	background-size:210px;
 	height: 80px;

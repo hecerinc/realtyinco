@@ -1,5 +1,6 @@
 <?php require "header.php"; ?>
 	<link rel="stylesheet" href="css/slick.css">
+	<link rel="stylesheet" href="css/slick-theme.css">
 	<script src="js/slick.min.js"></script>
 	
 	<!-- begin content -->
@@ -7,9 +8,18 @@
 		<div class="row specific">
 			<div class="six columns">
 				<h2 class="nameof">Propiedad ID: 31-CV-25</h2>
-				<img src="img/lorempixelspec.png" alt="Nombre de la obra">
+				<div class="slider slider-for">
+					<img src="img/lorempixelspec.png" alt="Nombre de la obra">
+					<img src="img/aboutus.png" alt="Nombre de la obra">
+					<img src="img/lorempixelspec.png" alt="Nombre de la obra">
+					<img src="img/aboutus.png" alt="Nombre de la obra">
+					<img src="img/lorempixelspec.png" alt="Nombre de la obra">
+					<img src="img/aboutus.png" alt="Nombre de la obra">
+					<img src="img/lorempixelspec.png" alt="Nombre de la obra">
+					<img src="img/lorempixelspec.png" alt="Nombre de la obra">
+				</div>
 				<div class="clear h10px"></div>
-				<div class="slick-slider-spec">
+				<div class="slick-slider-spec slider-nav">
 					<div class="slide"><img src="img/slick.png" alt=""></div>
 					<div class="slide"><img src="img/slick.png" alt=""></div>
 					<div class="slide"><img src="img/slick.png" alt=""></div>
@@ -124,7 +134,7 @@ Entre las recámaras se cuenta con un cuarto de televisión y a un lado un close
 </p>
 		</div>
 		<div class="row map-calc">
- 			<div class="gMap u-fl">
+ 			<div class="gMap u-fl ">
 				<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3596.7466069752254!2d-100.33496049206542!3d25.646534142268596!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8662be6cf41998b9%3A0x85d1e4912d3acf3c!2sHospital+Zambrano+Hellion!5e0!3m2!1sen!2s!4v1423837820842" width="420" height="340" frameborder="0" style="border:0"></iframe>
 			</div>
 			<div class="u-fr right-side">
@@ -149,29 +159,43 @@ Entre las recámaras se cuenta con un cuarto de televisión y a un lado un close
 		<div class="row">
 			<div class="similar">
 				<h5>Propiedades Similares</h5>
-				<div class="similar-item">
-					<a class="image" href="#"><img src="img/lorempixelsimilar.png" alt="Item relacionado"></a>
-					<a href="#" class="go-to-property">Ver propiedad</a>
-				</div>
-				<div class="similar-item">
-					<a class="image" href="#"><img src="img/lorempixelsimilar.png" alt="Item relacionado"></a>
-					<a href="#" class="go-to-property">Ver propiedad</a>
-				</div>
-				<div class="similar-item">
-					<a class="image" href="#"><img src="img/lorempixelsimilar.png" alt="Item relacionado"></a>
-					<a href="#" class="go-to-property">Ver propiedad</a>
-				</div>
-				<div class="similar-item">
-					<a class="image" href="#"><img src="img/lorempixelsimilar.png" alt="Item relacionado"></a>
-					<a href="#" class="go-to-property">Ver propiedad</a>
-				</div>
-				<div class="similar-item">
-					<a class="image" href="#"><img src="img/lorempixelsimilar.png" alt="Item relacionado"></a>
-					<a href="#" class="go-to-property">Ver propiedad</a>
-				</div>
-				<div class="similar-item">
-					<a class="image" href="#"><img src="img/lorempixelsimilar.png" alt="Item relacionado"></a>
-					<a href="#" class="go-to-property">Ver propiedad</a>
+				<div class="property-slider">
+					<div class="similar-item">
+						<a class="image" href="#"><img src="img/lorempixelsimilar.png" alt="Item relacionado"></a>
+						<a href="#" class="go-to-property">Ver propiedad</a>
+					</div>
+					<div class="similar-item">
+						<a class="image" href="#"><img src="img/lorempixelsimilar.png" alt="Item relacionado"></a>
+						<a href="#" class="go-to-property">Ver propiedad</a>
+					</div>
+					<div class="similar-item">
+						<a class="image" href="#"><img src="img/lorempixelsimilar.png" alt="Item relacionado"></a>
+						<a href="#" class="go-to-property">Ver propiedad</a>
+					</div>
+					<div class="similar-item">
+						<a class="image" href="#"><img src="img/lorempixelsimilar.png" alt="Item relacionado"></a>
+						<a href="#" class="go-to-property">Ver propiedad</a>
+					</div>
+					<div class="similar-item">
+						<a class="image" href="#"><img src="img/lorempixelsimilar.png" alt="Item relacionado"></a>
+						<a href="#" class="go-to-property">Ver propiedad</a>
+					</div>
+					<div class="similar-item">
+						<a class="image" href="#"><img src="img/lorempixelsimilar.png" alt="Item relacionado"></a>
+						<a href="#" class="go-to-property">Ver propiedad</a>
+					</div>
+					<div class="similar-item">
+						<a class="image" href="#"><img src="img/lorempixelsimilar.png" alt="Item relacionado"></a>
+						<a href="#" class="go-to-property">Ver propiedad</a>
+					</div>
+					<div class="similar-item">
+						<a class="image" href="#"><img src="img/lorempixelsimilar.png" alt="Item relacionado"></a>
+						<a href="#" class="go-to-property">Ver propiedad</a>
+					</div>
+					<div class="similar-item">
+						<a class="image" href="#"><img src="img/lorempixelsimilar.png" alt="Item relacionado"></a>
+						<a href="#" class="go-to-property">Ver propiedad</a>
+					</div>
 				</div>
 
 			</div>
@@ -181,41 +205,47 @@ Entre las recámaras se cuenta con un cuarto de televisión y a un lado un close
 	<!-- end content -->
 <script>
 	$(function(){
-		$('.slick-slider-spec').slick({
+		$('.property-slider').slick({
 			dots: false,
-			infinite: true,
+			infinite: false,
 			speed: 300,
-			slidesToShow: 4,
-			slidesToScroll: 2,
+			slidesToShow: 6,
+			slidesToScroll: 1,
 			responsive: [
 				{
-				  breakpoint: 1024,
+				  breakpoint: 1120,
 				  settings: {
-					slidesToShow: 3,
-					slidesToScroll: 3,
-					infinite: true,
-					dots: true
+					slidesToShow: 5,
+					slidesToScroll: 2
 				  }
 				},
-				// {
-				//   breakpoint: 600,
-				//   settings: {
-				// 	slidesToShow: 2,
-				// 	slidesToScroll: 2
-				//   }
-				// },
 				{
-					breakpoint: 550,
-					settings:{
-						slidesToShow: 4,
-						slidesToScroll: 2
-					}
+				  breakpoint: 930,
+				  settings: {
+					slidesToShow: 4,
+					slidesToScroll: 2
+				  }
 				},
 				{
-				  breakpoint: 480,
+				  breakpoint: 750,
 				  settings: {
 					slidesToShow: 3,
-					slidesToScroll: 3
+					slidesToScroll: 1
+				  }
+				},
+				{
+				  breakpoint: 550,
+				  settings: {
+					slidesToShow: 2,
+					slidesToScroll: 1
+				  }
+				},
+				{
+				  breakpoint: 345,
+				  settings: {
+					slidesToShow: 1,
+					slidesToScroll: 1,
+					centerMode:true
 				  }
 				}
 				// You can unslick at a given breakpoint now by adding:
@@ -223,6 +253,59 @@ Entre las recámaras se cuenta con un cuarto de televisión y a un lado un close
 				// instead of a settings object
 			  ]
 		});
+
+		$('.slider-for').slick({
+			slidesToShow: 1,
+			slidesToScroll: 1,
+			arrows: false,
+			fade: true,
+			asNavFor: '.slider-nav'
+		});
+		$('.slider-nav').slick({
+			slidesToShow: 4,
+			slidesToScroll: 1,
+			asNavFor: '.slider-for',
+			speed:300,
+			infinite:true,
+			// centerMode: ,
+			arrows:true,
+			focusOnSelect: true,
+			responsive: [
+				{
+				  breakpoint: 1024,
+				  settings: {
+					slidesToShow: 3,
+					slidesToScroll: 1,
+					infinite: true
+				  }
+				},
+				{
+				  breakpoint: 730,
+				  settings: {
+					slidesToShow: 5,
+					slidesToScroll: 1
+				  }
+				},
+				{
+					breakpoint: 550,
+					settings:{
+						slidesToShow: 4,
+						slidesToScroll: 1
+					}
+				},
+				{
+				  breakpoint: 480,
+				  settings: {
+					slidesToShow: 3,
+					slidesToScroll: 1
+				  }
+				}
+				// You can unslick at a given breakpoint now by adding:
+				// settings: "unslick"
+				// instead of a settings object
+			]
+		});
+
 		searchBarHide();
 		$(window).resize(function(){
 			if($(this).width()<750){

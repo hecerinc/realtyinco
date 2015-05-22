@@ -37,7 +37,7 @@
 		<div class="clear h20px"></div>
 		<div class="container header">
 			<div class="row top-header">
-				<a href="#" class="logo u-fl">Realty World Inco</a>
+				<a href="/realty" class="logo u-fl">Realty World Inco</a>
 				<div class="clear h20px specialbreak"></div>
 				<div class="property-search u-fr">
 					<form action="#">
@@ -76,7 +76,7 @@
 							<div class="u-fr btn-search">
 								<input type="submit" value="BUSCAR" class="submit">
 								<div class="clear"></div>
-								<a href="#" class="advanced-search">B&uacute;squeda avanzada</a>
+								<a href="bavanzada.php" class="advanced-search">B&uacute;squeda avanzada</a>
 							</div>
 						</fieldset>
 					</form>
@@ -90,10 +90,10 @@
 				<nav class="main-nav">
 					<ul>
 						<li class="home"><a href="#">Home</a></li>
-						<li><a href="#">Qui&eacute;nes Somos</a></li>
+						<li><a href="aboutus.php">Qui&eacute;nes Somos</a></li>
 						<li><a href="#">Propiedades</a></li>
 						<li><a href="#">Servicios</a></li>
-						<li><a href="#">Asesores</a></li>
+						<li><a href="asesores.php">Asesores</a></li>
 						<li><a href="#">Brokers</a></li>
 						<li><a href="#">Red RW</a></li>
 						<li class="last"><a href="#">Cont&aacute;ctanos</a></li>

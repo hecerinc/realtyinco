@@ -8,10 +8,18 @@
 						<li>
 							<label for="#">Tipo de propiedad</label>
 							<select style="display:none;" class="select-1" name="propiedad" id="propiedad">
-								<option value="1">Casa/Departamento</option>
-								<option value="2">Locales/Oficinas</option>
-								<option value="3">Bodegas</option>
-								<option value="4">Terrenos</option>
+								<option value="1">Casas</option>
+								<option value="2">Departamentos</option>
+								<option value="3">Quintas</option>
+								<option value="4">Bodegas</option>
+								<option value="5">Terrenos</option>
+								<option value="6">Locales</option>
+								<option value="7">Oficinas</option>
+								<option value="8">Ranchos</option>
+								<option value="9">Hoteles</option>
+								<option value="10">Edificios de departamentos</option>
+								<option value="11">Fraccionamientos</option>
+								<option value="12">Plazas comerciales</option>
 							</select>
 						</li>
 						<li>
