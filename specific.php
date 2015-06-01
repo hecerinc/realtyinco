@@ -1,22 +1,38 @@
 <?php require "header.php"; ?>
-	<link rel="stylesheet" href="css/slick.css">
-	<link rel="stylesheet" href="css/slick-theme.css">
-	<script src="js/slick.min.js"></script>
+	
 	
 	<!-- begin content -->
 	<div class="container">
 		<div class="row specific">
 			<div class="six columns">
 				<h2 class="nameof">Propiedad ID: 31-CV-25</h2>
+				<!-- De este input #overlay-text se jala el atributo de value para el texto sobre la imagen principal -->
+				<input type="hidden" id="overlay-text" value="En proceso de venta">
 				<div class="slider slider-for">
-					<img src="img/lorempixelspec.png" alt="Nombre de la obra">
-					<img src="img/aboutus.png" alt="Nombre de la obra">
-					<img src="img/lorempixelspec.png" alt="Nombre de la obra">
-					<img src="img/aboutus.png" alt="Nombre de la obra">
-					<img src="img/lorempixelspec.png" alt="Nombre de la obra">
-					<img src="img/aboutus.png" alt="Nombre de la obra">
-					<img src="img/lorempixelspec.png" alt="Nombre de la obra">
-					<img src="img/lorempixelspec.png" alt="Nombre de la obra">
+					<div class="show-slide">
+						<img src="img/lorempixelspec.png" height="320" alt="Nombre de la obra">
+					</div>
+					<div class="show-slide">
+						<img src="img/aboutus.png" height="320" alt="Nombre de la obra">
+					</div>
+					<div class="show-slide">
+						<img src="img/lorempixelspec.png" height="320" alt="Nombre de la obra">
+					</div>
+					<div class="show-slide">
+						<img src="img/aboutus.png" height="320" alt="Nombre de la obra">
+					</div>
+					<div class="show-slide">
+						<img src="img/lorempixelspec.png" height="320" alt="Nombre de la obra">
+					</div>
+					<div class="show-slide">
+						<img src="img/aboutus.png" height="320" alt="Nombre de la obra">
+					</div>
+					<div class="show-slide">
+						<img src="img/lorempixelspec.png" height="320" alt="Nombre de la obra">
+					</div>
+					<div class="show-slide">
+						<img src="img/lorempixelspec.png" height="320" alt="Nombre de la obra">
+					</div>
 				</div>
 				<div class="clear h10px"></div>
 				<div class="slick-slider-spec slider-nav">
@@ -32,14 +48,15 @@
 			</div>
 			<div class="six columns second">
 				<div class="action-btns">
-					<a href="#" class="calc2"></a>
+					<a href="javascript:history.back()" class="back"></a>
+					<a href="#" target="_blank" class="calc2"></a>
 					<a href="#" class="e-mail-spec"></a>
 					<a href="#" class="print"></a>
 					<a href="#" class="fb-spec"></a>
 					<a href="#" class="tw-spec"></a>
 				</div>
 				<div class="clear h10px"></div>
-				<p class="description">
+				<p class="description main-description">
 					Hermosa casa con amplios espacios, 3 recámaras (cada una con su baño). La recámara principal con baño, vestidor y tina. Sala comedor, estancia, recibidor y alberca. 2 bodegas y entrada independiente al área de la alberca. Terrazas con excelente vista, cuarto de servicio y lavandería.
 					<br><br>
 					Clima central en la planta alta y 2 minisplit en planta baja, puertas de aluminio y ventanas duovent. La recamara principal cuenta con aislante térmico para conservar la temperatura.
@@ -48,13 +65,12 @@
 				</p>
 				<div class="clear h20px"></div>
 				<div class="amenities u-cf">
-					<p>Amenidades</p>
 					<div>
-						<div class="amenity"></div>
-						<div class="amenity"></div>
-						<div class="amenity"></div>
-						<div class="amenity"></div>
-						<div class="amenity"></div>
+						<div class="amenity" title="Nombre de la amenidad (esto es el tooltip on hover)"></div>
+						<div class="amenity alberca"></div>
+						<div class="amenity asador"></div>
+						<div class="amenity biblioteca"></div>
+						<div class="amenity chimenea"></div>
 					</div>
 				</div>
 				<div class="clear h20px"></div>
@@ -90,7 +106,7 @@
 						</div>
 					</div>
 					<div class="clear"></div>
-					<p class="id">Propiedad ID: 31-CV-25</p>
+					<a href="#" class="id">Contactar asesor</a>
 				</div>
 				<div class="clear h20px mobile-b"></div>
 			</div>
@@ -149,7 +165,8 @@ Entre las recámaras se cuenta con un cuarto de televisión y a un lado un close
 </p>
 		</div>
 		<div class="row map-calc">
- 			<div class="gMap u-fl ">
+ 			<div class="gMap u-fl">
+ 				<!-- El mapa debe de ser 420x340 -->
 				<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3596.7466069752254!2d-100.33496049206542!3d25.646534142268596!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8662be6cf41998b9%3A0x85d1e4912d3acf3c!2sHospital+Zambrano+Hellion!5e0!3m2!1sen!2s!4v1423837820842" width="420" height="340" frameborder="0" style="border:0"></iframe>
 			</div>
 			<div class="u-fr right-side">
@@ -158,21 +175,16 @@ Entre las recámaras se cuenta con un cuarto de televisión y a un lado un close
 					<div class="u-fr calculator-text">
 						<h1 class="calc-hero">Calculadora</h1>
 						<p class="calc-sub">Te ayudamos a conseguir el cr&eacute;dito</p>
-						<a href="#" class="click-here-calc">Da click aqu&iacute; ›</a>
+						<!-- Aqui me imagino que querra pasar el id en un GET hacia la calculadora -->
+						<a href="calculadora.php?q=$IDpropiedad" target="_blank" class="click-here-calc">Da click aqu&iacute; ›</a>
 					</div>
 				</div>
-				<div class="mas-informacion u-cf">
-					<div class="u-fl top-info" style="padding:10px 0">
-						<div class="title">&iquest;M&aacute;s informes? Contacta a un asesor</div>
-						<img class="u-fl little-man" src="img/little-man-ico.png" alt="Contacta a un asesor">
-						<p><span style="font-weight:600;">Gerencia de Ventas:</span><br>01-81-8338-9668, 01-81-8220-8480 <br>y 84, Ext. 101</p>
-					</div>
-					<a href="#" class="contact-here u-fr"><img style="margin-bottom:9px;" src="img/ico-mail.png">Contactar<br> aqu&iacute; <span class="caret"></span></a>
-				</div>
+				
 			</div>
 		</div>
-		<div class="row">
-			<div class="similar">
+		<div class="clear h20px"></div>
+		<div class="row similar-contact">
+			<div class="similar six columns">
 				<h5>Propiedades Similares</h5>
 				<div class="property-slider">
 					<div class="similar-item">
@@ -214,11 +226,25 @@ Entre las recámaras se cuenta con un cuarto de televisión y a un lado un close
 				</div>
 
 			</div>
+			<div class="six columns">
+				<div class="mas-informacion u-cf">
+					<div class="u-fl top-info" style="padding:10px 0">
+						<div class="title">&iquest;M&aacute;s informes? Contacta a un asesor</div>
+						<img class="u-fl little-man" src="img/little-man-ico.png" alt="Contacta a un asesor">
+						<p><span style="font-weight:600;">Gerencia de Ventas:</span><br>01-81-8338-9668, 01-81-8220-8480 <br>y 84, Ext. 101</p>
+					</div>
+					<a href="#" class="contact-here u-fr"><img style="margin-bottom:9px;" src="img/ico-mail.png">Contactar<br> aqu&iacute; <span class="caret"></span></a>
+				</div>
+			</div>
 		</div>
 	</div>
 	<div class="clear h40px"></div>
 	<!-- end content -->
+<link rel="stylesheet" href="css/slick.css">
+<link rel="stylesheet" href="css/slick-theme.css">
+<script src="js/slick.min.js"></script>
 <script>
+	$('.gMap iframe').attr('width', '100%').attr('height', '100%');
 	$(function(){
 		$('.attribute-slider').slick({
 			dots:false,
@@ -238,28 +264,37 @@ Entre las recámaras se cuenta con un cuarto de televisión y a un lado un close
 			dots: false,
 			infinite: false,
 			speed: 300,
-			slidesToShow: 6,
+			slidesToShow: 3,
 			slidesToScroll: 1,
 			responsive: [
 				{
 				  breakpoint: 1120,
 				  settings: {
-					slidesToShow: 5,
-					slidesToScroll: 2
+					slidesToShow: 2,
+					slidesToScroll: 1
 				  }
 				},
+				// {
+				//   breakpoint: 930,
+				//   settings: {
+				// 	slidesToShow: 4,
+				// 	slidesToScroll: 2
+				//   }
+				// },
 				{
-				  breakpoint: 930,
+				  breakpoint: 768,
 				  settings: {
 					slidesToShow: 4,
-					slidesToScroll: 2
+					slidesToScroll: 2,
+					centerMode:false
 				  }
 				},
 				{
-				  breakpoint: 750,
+				  breakpoint: 700,
 				  settings: {
 					slidesToShow: 3,
-					slidesToScroll: 1
+					slidesToScroll: 1,
+					centerMode:false
 				  }
 				},
 				{
@@ -288,6 +323,7 @@ Entre las recámaras se cuenta con un cuarto de televisión y a un lado un close
 			slidesToScroll: 1,
 			arrows: false,
 			fade: true,
+			adaptiveHeight: true,
 			asNavFor: '.slider-nav'
 		});
 		$('.slider-nav').slick({
@@ -334,22 +370,35 @@ Entre las recámaras se cuenta con un cuarto de televisión y a un lado un close
 				// instead of a settings object
 			]
 		});
-
+		removeHeightAttr();
+		moveBtns();
 		searchBarHide();
 		$(window).resize(function(){
-			if($(this).width()<750){
-				var element = $('.action-btns').detach();
-				$('.nameof').after(element);
-				// $('.second.columns').append($('.map'));
-			}
-			if($(this).width()>=750){
-				var element = $('.action-btns').detach();
-				$('.second.columns').prepend(element);
-				console.log(element);
-			}
+			removeHeightAttr();
+			moveBtns();
 			searchBarHide();
 		});
+		var text = $('#overlay-text').val();
+		var p = "<p>"+text+"</p>";
+		$('.show-slide').append(p);
 	});
+	function removeHeightAttr(){
+		if($(window).width()<=1000)
+			$('.slider-for .slick-slide img').removeAttr('height');
+		else
+			$('.slider-for .slick-slide img').attr('height', 320);
+	}
+	function moveBtns(){
+		if($(this).width()<750){
+			var element = $('.action-btns').detach();
+			$('.nameof').after(element);
+			// $('.second.columns').append($('.map'));
+		}
+		else if($(this).width()>=750){
+			var element = $('.action-btns').detach();
+			$('.second.columns').prepend(element);
+		}
+	}
 	function searchBarHide(){
 		if($(window).width()<=1000){
 			$(".property-search").hide();

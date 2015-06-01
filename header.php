@@ -4,7 +4,7 @@
 
 	<!-- Basic Page Needs
 	–––––––––––––––––––––––––––––––––––––––––––––––––– -->
-	<meta charset="utf-8">
+	<meta charset="UTF-8">
 	<title>Realty World - Home</title>
 
 	<!-- Mobile Specific Metas
@@ -26,9 +26,6 @@
 	
 	<!-- JS -->
 	<script src="js/jquery-1.11.2.min.js"></script>
-	<script src="js/jScrollPane.js"></script>
-	<script src="js/jquery.mousewheel.js"></script>
-	<script src="js/SelectBox.js"></script>
 	<script src="js/responsive-nav.min.js"></script>
 
 </head>
@@ -105,12 +102,12 @@
 	<div class="sub-nav-band">
 		<div class="container">
 			<div class="row">
-				<div class="text-info u-cf u-fl">
+				<div class="text-info u-cf">
 					<p class="realty-world u-fl">Realty World Inco</p>
 					<p class="address u-fl"> &nbsp;&nbsp;Tel. 01 (81) 8220 8480 y 84 Ext. 101</p>
 				</div>
 				<div class="clear h10px"></div>
-				<div class="home-btns u-fl">
+				<div class="home-btns">
 					<a href="#" class="btn-attention">Atenci&oacute;n a clientes</a>
 					<a href="#" class="btn-register-property">Registra propiedad</a>
 					<a href="#" class="btn-search-property">Busco propiedad</a>

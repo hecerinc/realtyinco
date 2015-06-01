@@ -12,17 +12,20 @@
 
 	</footer>
 </body>
+<script src="js/jScrollPane.js"></script>
+<script src="js/jquery.mousewheel.js"></script>
+<script src="js/SelectBox.js"></script>
 <script>
 	var navigation;
 	$(function(){
-		$("select.custom.left").each(function() {					
+		$("select.custom.left").each(function() {
 			var sb = new SelectBox({
 				selectbox: $(this),
 				width: 138
 				// height: 25
 			});
 		});
-		$("select.custom.right").each(function() {					
+		$("select.custom.right").each(function() {
 			var sb = new SelectBox({
 				selectbox: $(this),
 				width: 218
