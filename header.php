@@ -23,6 +23,9 @@
 	<link rel="stylesheet" href="css/jquery.jscrollpane.css">
 	<link rel="stylesheet" href="css/responsive-nav.css">
 	<link rel="stylesheet" href="style.css">
+	<!--[if gt IE8]>
+		<link rel="stylesheet" type="text/css" href="ie.css" />
+	<![endif]-->
 	
 	<!-- JS -->
 	<script src="js/jquery-1.11.2.min.js"></script>
@@ -43,21 +46,21 @@
 							<div class="clear"></div>
 							<div class="selects u-fl">
 								<div class="select-left u-fl">
-									<select name="tipo" id="tipo" class="left custom" style="display:none;">
+									<select name="tipo" id="tipo" class="left custom">
 										<option value="1">Casas</option>
 										<option value="2">Departamentos</option>
 									</select>
-									<select name="zona" id="zona" class="left custom" style="display:none;">
+									<select name="zona" id="zona" class="left custom">
 										<option value="1">Zona Valle</option>
 										<option value="2">Zona Contry</option>
 									</select>
-									<select name="deal" id="deal" class="left custom" style="display:none;">
+									<select name="deal" id="deal" class="left custom">
 										<option value="1">Venta</option>
 										<option value="2">Renta</option>
 									</select>
 								</div>
 								<div class="select-right u-fr">
-									<select name="range" id="range" class="right custom" style="display:none;">
+									<select name="range" id="range" class="right custom">
 										<option value="">Rango de precios</option>
 										<option value="1">$100.00 - $200.00</option>
 									</select>

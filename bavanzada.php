@@ -7,19 +7,19 @@
 					<ul class="u-fl left-side">
 						<li>
 							<label for="estado">Estado</label>
-							<select name="estado" id="estado" class="select-1" style="display:none;">
+							<select name="estado" id="estado" class="select-1">
 								<option value="1">Default</option>
 							</select>
 						</li>
 						<li>
 							<label for="municipio">Municipio</label>
-							<select name="municipio" id="municipio" class="select-1" style="display:none;">
+							<select name="municipio" id="municipio" class="select-1">
 								<option value="1">Default</option>
 							</select>
 						</li>
 						<li>
 							<label for="#">Tipo de propiedad</label>
-							<select style="display:none;" class="select-1" name="propiedad" id="propiedad">
+							<select class="select-1" name="propiedad" id="propiedad">
 								<option value="1">Casas</option>
 								<option value="2">Departamentos</option>
 								<option value="3">Quintas</option>
@@ -38,19 +38,19 @@
 					<ul class="u-fr right-side" id="estate">
 						<li>
 							<label for="#">Renta o Venta</label>
-							<select style="display:none;" class="select-2" name="tipo" id="tipo">
+							<select class="select-2" name="tipo" id="tipo">
 								<option value="1">Default</option>
 							</select>
 						</li>
 						<li>
 							<label for="#">Zona de propiedad</label>
-							<select style="display:none;" class="select-2" name="zona" id="zona">
+							<select class="select-2" name="zona" id="zona">
 								<option value="1">Default</option>
 							</select>
 						</li>
 						<li>
 							<label for="#">Rango de precios</label>
-							<select style="display:none;" class="select-2" name="rango" id="rango">
+							<select class="select-2" name="rango" id="rango">
 								<option value="1">Default</option>
 							</select>
 						</li>
@@ -69,24 +69,24 @@
 					<div class="u-fl no-float-m property-spec">
 						<div class="metros1 u-cf">
 							<label class="u-fl" style="margin-bottom:20px;">m<sup>2</sup> de terreno</label>
-							<div class="u-fr no-float-m">
-								<select style="display:none;" name="metrost-lower" id="metrost-lower" class="select-3 lowerm">
+							<div class="u-fr metros10 no-float-m">
+								<select name="metrost-lower" id="metrost-lower" class="select-3 lowerm">
 									<option value="1">Default</option>
 								</select>
 								<p style="display:inline;">a</p>
-								<select style="display:none;" name="metrost-upper" id="metrost-upper" class="select-3 upperm">
+								<select name="metrost-upper" id="metrost-upper" class="select-3 upperm">
 									<option value="1">Default</option>
 								</select>
 							</div>
 						</div>
 						<div class="metros2 u-cf">
-							<label for="" style="margin-bottom:20px;">m<sup>2</sup> de construcci&oacute;n</label>
-							<div class="u-fr no-float-m">
-								<select style="display:none;" name="metrosc-lower" id="metrosc-lower" class="select-3 lowerm">
+							<label for="" class="u-fl" style="margin-bottom:20px;">m<sup>2</sup> de construcci&oacute;n</label>
+							<div class="u-fr metros20 no-float-m">
+								<select name="metrosc-lower" id="metrosc-lower" class="select-3 lowerm">
 									<option value="1">Default</option>
 								</select>
 								<p style="display:inline;">a</p>
-								<select style="display:none;" name="metrosc-upper" id="metrosc-upper" class="select-3 upperm">
+								<select name="metrosc-upper" id="metrosc-upper" class="select-3 upperm">
 									<option value="1">Default</option>
 								</select>
 							</div>
@@ -101,19 +101,19 @@
 					<ul class="u-fr property-right-side no-float-m">
 						<li>
 							<label for="plantas">plantas</label>
-							<select style="display:none;" class="select-3" name="plantas" id="plantas">
+							<select class="select-3" name="plantas" id="plantas">
 								<option value="1">Default</option>
 							</select>
 						</li>
 						<li>
 							<label for="banos">baños</label>
-							<select style="display:none;" class="select-3" name="banos" id="banos">
+							<select class="select-3" name="banos" id="banos">
 								<option value="1">Default</option>
 							</select>
 						</li>
 						<li>
 							<label for="recamaras">rec&aacute;maras</label>
-							<select style="display:none;" class="select-3" name="recamaras" id="recamaras">
+							<select class="select-3" name="recamaras" id="recamaras">
 								<option value="1">Default</option>
 							</select>
 						</li>
@@ -169,7 +169,7 @@
 	</div>
 	<script>
 		$(function(){
-			$("select.select-1").each(function() {					
+			/*$("select.select-1").each(function() {					
 				var sb = new SelectBox({
 					selectbox: $(this),
 					width: 140,
@@ -190,21 +190,7 @@
 					width: 100
 					// height: 25
 				});
-			});
+			});*/
 		});
-		function detectProperty(){
-			var value = $(this.selectbox).val();
-			switch(value){
-				case 1:
-				break;
-				case 2:
-				break;
-				case 3:
-				break;
-				case 4:
-				break;
-				default:
-			}
-		}
 	</script>
 <?php require "footer.php" ?>

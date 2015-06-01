@@ -3,7 +3,7 @@ Theme Name: HOLD - Realty World Inco
 Theme URI: http://www.hold.mx/
 Description: Realty World
 Author: Hector Rincón
-Version: 1.0
+Version: 2.0
 Tags:
 */
 /* Fonts */
@@ -356,7 +356,7 @@ a.tw-spec{
 /* Especifico
 * ---------------------
 */
-.amenities{
+.specific .amenities{
 	width:250px;
 	margin: 0 auto;
 }
@@ -411,11 +411,6 @@ a.tw-spec{
 .attribute-slider{
 	padding: 0 0px 0 40px;
 }
-.attribute-slider .att-slide{
-/*	border-right: 1px solid #ccc;
-	outline: right 1px solid #fff;
-	margin-right: 20px;
-*/}
 .pricing .legend{
 	background:#000;
 	color: #fff;
@@ -515,12 +510,6 @@ h5{
 	padding-right:25px;
 }
 /*Map*/
-
-.logo{
-	background-size:210px;
-	height: 80px;
-	width: 210px;
-}
 .vistas{
 	width: 230px;
 	margin: 0 auto;
@@ -696,6 +685,10 @@ th, td{
 	border-radius:10px;
 	float: right;
 }
+.logo{
+	width: 326px;
+	height: 109px;
+}
 .btn-break{
 	display: none;
 }
@@ -742,7 +735,6 @@ p.nota{
 .calc .submit{
 	float:none;
 	margin: 0 auto;
-	/*width: 380px;*/
 	display: block;
 	position: relative;
 	top: 23px;
@@ -810,18 +802,6 @@ ul.details li.name a{
 	text-align: center;
 	width: 100%;
 }
-.advanced-search-form #rango{
-	width: 220px;
-}
-.advanced-search-form .first select{
-	width: 140px;
-}
-.advanced-search-form .left-side{
-	width: 275px;
-}
-.advanced-search-form .left-side select{
-	float: right;
-}
 .advanced-search-form legend, .advanced-search-form label{
 	text-decoration: none !important;
 	border:0 none;
@@ -831,12 +811,44 @@ ul.details li.name a{
 	text-transform: none;
 	font-size: 1.5rem;
 }
+.advanced-search-form legend{
+	margin-bottom: 25px;
+}
 .advanced-search-form select{
-	height: 24px;
+	box-sizing:border-box;
+	padding:2px 10px;
+	height: 27px;
 	min-width: 100px;
-	text-decoration: none;
-	border:1px solid #ccc;
-	border-radius:5px;
+	font-size: 1.3rem;
+}
+.advanced-search-form .first select{
+	float: right;
+	margin-bottom: 0;
+	margin-left: 12px;
+	width: 50%;
+}
+.advanced-search-form .first .left-side{
+	width: 275px;
+}
+.advanced-search-form .first li{
+	content: "";
+	display: table;
+	clear: both; 
+}
+.advanced-search-form fieldset{
+	margin-bottom: 20px;
+}
+.advanced-search-form #select-rango{
+	margin-right: 0;
+}
+.advanced-search-form .right-side #normal{
+	margin-left: 20px;
+}
+.advanced-search-form .first li{
+	width: 100%;
+}
+.advanced-search-form .right-side{
+	width: 50%;
 }
 .advanced-search-form ul{
 	list-style: none;
@@ -868,9 +880,6 @@ ul.details li.name a{
 	top:-3px;
 	left:5px;
 }
-.advanced-search-form legend{
-	margin-bottom: 25px;
-}
 .advanced-search-form #videos{
 	margin-left: 10px;
 }
@@ -887,12 +896,7 @@ ul.details li.name a{
 	margin-right: 10px;
 	text-align: right;
 }
-.advanced-search-form fieldset{
-	margin-bottom: 20px;
-}
-.description-spec{
-	margin: 50px 0;
-}
+.description-spec{margin: 50px 0;}
 .description-spec .legend, .amenities-list .legend{
 	text-transform: uppercase;
 	font-weight: 800;
@@ -900,9 +904,7 @@ ul.details li.name a{
 	text-align: center;
 	margin-bottom: 35px;
 }
-.description-spec .desc{
-	line-height: 1.2em;
-}
+.description-spec .desc{line-height: 1.2em;}
 .calc-sub, .calc-hero{
 	text-transform: uppercase;
 	font-weight: 800;
@@ -921,12 +923,8 @@ ul.details li.name a{
 	margin-right: 4.83091787%;
 	width: 17.874396135265%;
 }
-.calculator-text{
-	width: 77.29468599033%;
-}
-.calc-sub{
-	color: #EE322C;
-}
+.calculator-text{width: 77.29468599033%;}
+.calc-sub{color: #EE322C;}
 .click-here-calc{
 	font-weight: 800;
 	font-size: 1.8rem;
@@ -935,9 +933,7 @@ ul.details li.name a{
 .map-calc .right-side{
 	width: 46%;
 	margin-left: 4%;
-	/*margin-top: 40px;*/
 	padding:80px 0;
-
 }
 .map-calc{
 	margin-bottom: 40px;
@@ -971,49 +967,15 @@ ul.details li.name a{
 	height: 15px;
 	display: inline-block;
 }
-.list-container .col{
 	float: left;
 	width: 33%;
 }
 .aboutus .main-copy{
 	display: inline;
-	/*padding-left: 20px;*/
 }
 .aboutus-image{
 	float: left;
 	margin-right: 30px;
-}
-.advanced-search-form #select-rango{
-	margin-right: 0;
-}
-/*.advanced-search-form #select-estado, .advanced-search-form #select-municipio{
-	float: right;
-	margin-right: 0;
-}
-*/
-.advanced-search-form .right-side #normal{
-	margin-left: 20px;
-}
-.advanced-search-form .customSelect{
-	display: inline-block !important;
-}
-.advanced-search-form .first .left-side .customSelect, 
-.advanced-search-form .first .right-side .customSelect,
-.advanced-search-form .property-right-side .customSelect{
-	float: right;
-	margin-right: 0;
-}
-.advanced-search-form .first li{
-	width: 100%;
-}
-.advanced-search-form .right-side{
-	width: 48%;
-}
-.advanced-search-form .right-side .customSelect{
-	width: 50% !important;
-}
-fieldset.property > .u-fl .u-fr .customSelect:last-child{
-	margin-right: 0;
 }
 .metros1, .metros2{
 	width: 100%;
@@ -1074,7 +1036,6 @@ fieldset.property > .u-fl .u-fr .customSelect:last-child{
 	position: absolute;
 }
 .show-slide p{
-	/*display: inline-block;*/
 	color: #fff;
 	left: -10px;
 	position: relative;
@@ -1084,7 +1045,37 @@ fieldset.property > .u-fl .u-fr .customSelect:last-child{
 	font-weight: 800;
 	text-shadow:1px 1px 2px #6E2424;
 	font-size: 1.6rem;
-	/*margin-top: -20px;*/
+}
+/* Selects */
+.top-header .selects{
+	margin-right: 10px;
+}
+.top-header .selects select{
+	float: none;
+	display: block;
+	margin-bottom: 10px;
+	padding-left: 8px;
+}
+.top-header .selects #deal{
+	margin-bottom: 0;
+}
+.top-header .selects .select-right{
+	margin-left: 10px;
+}
+.top-header .selects .left{
+	width: 138px;
+}
+.top-header .selects .right{
+	width: 218px;
+}
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+/* IE10+ CSS styles go here */
+	.top-header .property-search{
+		width: 60%;
+	}
+	.top-header .selects{
+		width: 69.58%;
+	}
 }
 /* Media Queries
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
@@ -1137,6 +1128,9 @@ there.
 		margin-left:0;
 	}
 	.customSelect{
+		width: 100% !important;
+	}
+	.advanced-search-form select{
 		width: 100% !important;
 	}
 	#select-deal, #select-range{
@@ -1205,9 +1199,6 @@ there.
 	.pricing .one{
 		border-right: 0 none;
 	}
-	.pricing .two{
-		/*padding:0 25px;*/
-	}
 	.amenities p{
 		border-right: 0 none;
 		display: block;
@@ -1243,8 +1234,18 @@ there.
 	#select-metrosc-upper, #select-metrost-upper{
 		margin-bottom: 20px;
 	}
-	.property-right-side{
+	ul.property-right-side{
 		margin-right: 0;
+		width: 100%;
+	}
+	ul.property-right-side li{
+		float: none;
+	}
+	div.property-spec{
+		width: 100%;
+	}
+	.advanced-search-form .property-spec select{
+		width: 100% !important;
 	}
 	.property-right-side label{
 		margin: 8px 0 0;
@@ -1256,11 +1257,17 @@ there.
 	.advanced-search-form .first ul.right-side{
 		width: 100%;
 	}
-	.advanced-search-form .customSelect{
-		margin-right: 0;
-	}
 	.tipodevistas{
 		margin-top: 20px;
+	}
+	.top-header .property-search .selects select{
+		width: 100%;
+	}
+	.top-header .selects .select-right{
+		margin-left: 0;
+	}
+	.top-header .selects select#deal{
+		margin-bottom: 10px;
 	}
 	.no-float-m{
 		float: none;
@@ -1277,9 +1284,8 @@ there.
 	}
 }
 @media(max-width: 710px){
-	.advanced-search-form .property-right-side,
-	.advanced-search-form .property-right-side li{
-		float: none;
+	.property-right-side li{
+		float: left;
 	}
 }
 /* Smaller than tablet */
@@ -1322,15 +1328,18 @@ there.
 		padding: 10px 0 0;
 		background-size:30px;
 	}
+	.logo{
+		background-size:210px;
+		height: 80px;
+		width: 210px;
+		margin: 0 auto;
+	}
+	ul.property-right-side{
+		margin-left: 0;
+	}
 }
 /* Larger than tablet */
 @media (min-width: 750px) {
-	.logo{
-		background-size:initial;
-		width: 326px;
-		height: 109px;
-		margin: 0 auto;
-	}
 	.top-header{
 		padding:0 18px;
 	}
@@ -1348,20 +1357,17 @@ there.
 		width: initial;
 	}
 }
-/*@media(max-width: 900px){
-	.advanced-search-form #select-rango{
-		width: 140px !important;
-	}
-}*/
 @media(max-width: 780px){
 	.advanced-search-form .first .left-side, .advanced-search-form .first .right-side{
 		float: none;
 		margin: 0 auto;
 		width: 85%;
 	}
-	.advanced-search-form .first .customSelect{
-		width: 50% !important;
-		margin-right: 0;
+	.advanced-search-form .tipodevistas{
+		width: 220px;
+		margin: 0 auto;
+		display: block;
+		float: none;
 	}
 	.advanced-search-form #select-rango{
 		float: right;
@@ -1369,9 +1375,6 @@ there.
 
 }
 @media(max-width: 870px){
-	/*.asesor .email{
-		display: none;
-	}*/
 	.asesor.columns{
 		width: 48%;
 	}
@@ -1382,19 +1385,19 @@ there.
 		margin-left: 0;
 	}
 	.property-spec{
-		width: 100%;
+		width: 76%;
+		box-sizing:border-box;
 	}
-	.metros1 > div, .metros2 > div{
-		width: 70%;
-	}
-	.property-spec .customSelect{
-		width: 45% !important;
+	.property-spec select{
+		width: 30% !important;
 	}
 	.property-right-side{
+		margin-left: 4%;
 		margin-right: 0;
+		width: 20%;
 	}
-	.property-right-side li{
-		float: left;
+	.property-right-side select{
+		float: none;
 	}
 	.fotosyvideos{
 		float: none;

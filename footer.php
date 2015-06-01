@@ -18,20 +18,20 @@
 <script>
 	var navigation;
 	$(function(){
-		$("select.custom.left").each(function() {
-			var sb = new SelectBox({
-				selectbox: $(this),
-				width: 138
-				// height: 25
-			});
-		});
-		$("select.custom.right").each(function() {
-			var sb = new SelectBox({
-				selectbox: $(this),
-				width: 218
-				// height: 25
-			});
-		});
+		// $("select.custom.left").each(function() {
+		// 	var sb = new SelectBox({
+		// 		selectbox: $(this),
+		// 		width: 138
+		// 		// height: 25
+		// 	});
+		// });
+		// $("select.custom.right").each(function() {
+		// 	var sb = new SelectBox({
+		// 		selectbox: $(this),
+		// 		width: 218
+		// 		// height: 25
+		// 	});
+		// });
 		navigation = responsiveNav('.main-nav');
 	});
 </script>
