@@ -967,6 +967,7 @@ ul.details li.name a{
 	height: 15px;
 	display: inline-block;
 }
+.list-container .col{
 	float: left;
 	width: 33%;
 }

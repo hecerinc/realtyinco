@@ -251,6 +251,7 @@ Entre las recámaras se cuenta con un cuarto de televisión y a un lado un close
 			infinite:false,
 			speed:300,
 			slidesToShow:2,
+			arrows:false,
 			slidesToScroll:1,
 			centerMode:false,
 			responsive:[
