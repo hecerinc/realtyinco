@@ -1078,6 +1078,57 @@ ul.details li.name a{
 		width: 69.58%;
 	}
 }
+#contacto .address{
+	margin-top: 10px;
+	font-size: 1.4rem;
+}
+#contacto .left-side{
+	padding:0 5%;
+}
+#contacto #msg{
+	width: 100%;
+	border: 1px solid #000;
+	resize:none;
+	border-radius:15px;
+	height:100px;
+}
+#contacto #interes{
+	margin:15px 0;
+}
+#contacto #state, #contacto #ciudad, #contacto #interes{
+	width: 100%;
+	border:1px solid #000;
+	border-radius:20px;
+	height:30px;
+	font-size: 1.3rem;
+	padding-top:5px;
+}
+.gMap-contact{
+	height: 320px;
+	position: relative;
+}
+#contacto input[type="checkbox"]{
+	float: left;
+}
+#contacto label[for="terms"] a{
+	font-size: 1.3rem;
+	margin-left: 10px;
+	position: relative;
+	top:-5px;
+}
+@media(max-width: 980px){
+	#contacto .columns{
+		width: 100%;
+		float: none;
+		margin: 0;
+	}
+	#contacto .left-side{
+		padding: 0;
+	}
+	#contacto .five.columns{
+		margin-top: 13%;
+	}
+}
 /* Media Queries
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 /*
