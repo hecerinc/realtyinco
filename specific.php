@@ -168,6 +168,8 @@ Entre las recámaras se cuenta con un cuarto de televisión y a un lado un close
  			<div class="gMap u-fl">
  				<!-- El mapa debe de ser 420x340 -->
 				<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3596.7466069752254!2d-100.33496049206542!3d25.646534142268596!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8662be6cf41998b9%3A0x85d1e4912d3acf3c!2sHospital+Zambrano+Hellion!5e0!3m2!1sen!2s!4v1423837820842" width="420" height="340" frameborder="0" style="border:0"></iframe>
+				<!-- Aqui tendria que ir la condicion -->
+				<!-- <img src="img/mapa.jpg" alt="Mapa no disponible" title="Mapa no disponbile"> -->
 			</div>
 			<div class="u-fr right-side">
 				<div class="calc-area u-cf">

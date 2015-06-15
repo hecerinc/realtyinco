@@ -2,7 +2,7 @@
 	<div class="container bavanzada">
 		<h2>B&uacute;squeda Avanzada</h2>
 		<div class="smaller-container">
-			<form action="#" class="advanced-search-form">
+			<form action="#" class="advanced-search-form" id="asform">
 				<fieldset class="first">
 					<ul class="u-fl left-side">
 						<li>
@@ -18,20 +18,15 @@
 							</select>
 						</li>
 						<li>
-							<label for="#">Tipo de propiedad</label>
-							<select class="select-1" name="propiedad" id="propiedad">
-								<option value="1">Casas</option>
-								<option value="2">Departamentos</option>
-								<option value="3">Quintas</option>
-								<option value="4">Bodegas</option>
-								<option value="5">Terrenos</option>
-								<option value="6">Locales</option>
-								<option value="7">Oficinas</option>
-								<option value="8">Ranchos</option>
-								<option value="9">Hoteles</option>
-								<option value="10">Edificios de departamentos</option>
-								<option value="11">Fraccionamientos</option>
-								<option value="12">Plazas comerciales</option>
+							<label for="#">Zona de propiedad</label>
+							<select class="select-1" name="zona" id="zona">
+								<option value="1">Default</option>
+							</select>
+						</li>
+						<li>
+							<label for="colonia">Colonia</label>
+							<select name="colonia" id="colonia" class="select-1">
+								<option value="1">Default</option>
 							</select>
 						</li>
 					</ul>
@@ -43,9 +38,19 @@
 							</select>
 						</li>
 						<li>
-							<label for="#">Zona de propiedad</label>
-							<select class="select-2" name="zona" id="zona">
-								<option value="1">Default</option>
+							<label for="#">Tipo de propiedad</label>
+							<select class="select-2" name="propiedad" id="propiedad">
+								<option value="1">Casas</option>
+								<option value="2">Departamentos</option>
+								<option value="3">Quintas</option>
+								<option value="4">Bodegas</option>
+								<option value="5">Terrenos</option>
+								<option value="6">Oficinas/Locales</option>
+								<option value="7">Ranchos</option>
+								<option value="8">Hoteles</option>
+								<option value="9">Edificios de departamentos</option>
+								<option value="10">Fraccionamientos</option>
+								<option value="11">Plazas comerciales</option>
 							</select>
 						</li>
 						<li>
@@ -123,44 +128,20 @@
 					<legend>Elige amenidades</legend>
 					<!-- Esta parte scalea con los li's, *NO* agregar mas ul.check-list, sino agrega elementos a cada columna -->
 					<ul class="check-list">
-						<li>
+						<!-- <li>
 							<input type="checkbox" name="alberca" id="alberca">
 							<label for="alberca">Alberca</label>
 						</li>
 						<li>
 							<input type="checkbox" name="chimenea" id="chimenea">
 							<label for="chimenea">Chimenea</label>
-						</li>
+						</li> -->
 					</ul>
 					<ul class="check-list">
-						<li>
-							<input type="checkbox" name="amueblado" id="amueblado">
-							<label for="amueblado">Amueblado</label>
-						</li>
-						<li>
-							<input type="checkbox" name="private" id="private">
-							<label for="private">Fracc. privado</label>
-						</li>
 					</ul>
 					<ul class="check-list">
-						<li>
-							<input type="checkbox" name="asadaor" id="asador">
-							<label for="asador">Asador</label>
-						</li>
-						<li>
-							<input type="checkbox" name="gym" id="gym">
-							<label for="gym">Gimnasio</label>
-						</li>
 					</ul>
 					<ul class="check-list">
-						<li>
-							<input type="checkbox" name="biblio" id="biblio">
-							<label for="biblio">Biblioteca</label>
-						</li>
-						<li>
-							<input type="checkbox" name="juegos" id="juegos">
-							<label for="juegos">Juegos</label>
-						</li>
 					</ul>
 				</fieldset>
 				<input type="submit" value="BUSCAR" class="submit-btn">
@@ -168,29 +149,106 @@
 		</div>
 	</div>
 	<script>
-		$(function(){
-			/*$("select.select-1").each(function() {					
-				var sb = new SelectBox({
-					selectbox: $(this),
-					width: 140,
-					changeCallback: detectProperty
-					// height: 25
-				});
-			});
-			$("select.select-2").each(function() {					
-				var sb = new SelectBox({
-					selectbox: $(this),
-					width: 220
-					// height: 25
-				});
-			});
-			$("select.select-3").each(function() {					
-				var sb = new SelectBox({
-					selectbox: $(this),
-					width: 100
-					// height: 25
-				});
-			});*/
-		});
+		document.getElementById('asform').reset();
+		checkAmenities();
+		$('#propiedad').on('change', checkAmenities);
+		function checkAmenities(){
+			var amenities;
+			switch(parseInt($('#propiedad').val())){
+				case 1: //Casa
+					amenities = [
+						'Amueblada', 
+						'Una planta', 
+						'Alberca', 
+						'Gimnasio', 
+						'Chimenea', 
+						'Jardín',
+						'Cuarto de servicio',
+						'Tecnologías inteligentes',
+						'Biblioteca',
+						'Cochera techada',
+						'Cocina integral',
+						'Libre de gravamen',
+						'Estancia familiar',
+						'Aceptan estudiantes'
+					];
+				break;
+				case 2: //Departamento
+					amenities = [
+						'Tecnologías inteligentes',
+						'Tecnologías ecológicas',
+						'Cajones de estacionamiento',
+						'Alberca',
+						'Gimnasio',
+						'Accesos especiales',
+						'Elevador',
+						'Jardines',
+						'Salón de eventos',
+						'Área de bodega',
+						'Lobby',
+						'Seguridad',
+						'Libre de gravamen',
+						'Estancia familiar',
+						'Aceptan estudiantes'
+					];
+				break;
+				case 4://Bodegas
+					amenities = [
+						'Espuela de ferrocarril',
+						'Grúa viajera',
+						'Comedor',
+						'Área de maniobras',
+						'Andenes',
+						'Cajones de estacionamiento',
+						'Libre de gravamen'
+					];
+				break;
+				case 5: //Terrenos
+					amenities = [
+						'Red eléctrica',
+						'Agua potable',
+						'Gas natural',
+						'Alumbrado público',
+						'Drenaje sanitario',
+						'Calles pavimentadas',
+						'Libre de gravamen'
+					];
+				break;
+				case 6: //Oficinas/Locales
+					amenities = [
+						'Estacionamiento público',
+						'Estacionamiento para empleados',
+						'Cocineta',
+						'Paleta de publicidad',
+						'Área de bodega o almacenaje',
+						'Libre de gravamen'
+					];
+				break;
+				default:
+					amenities = null;
+			}
+			if(!amenities)
+				return false;
+			var html = "";
+			var each = Math.floor(amenities.length/4);
+			var rem = amenities.length%4;
+			var checklists = $('.check-list');
+			checklists.empty();
+			var k=0;
+			for (var i = 0; i < 4; i++) {
+				for (var j=0; j < each; j++) {
+					html = '<li><label for="asador"><input type="checkbox" name="asador" id="asador">';
+					html += amenities[k]+'</label></li>';
+					checklists.eq(i).append(html);
+					k++;
+				}
+			}
+			for (var i = 0; i < rem; i++) {
+				html = '<li><label for="asador"><input type="checkbox" name="asador" id="asador">';
+				html += amenities[amenities.length-i-1]+'</label></li>';
+				checklists.eq(i).append(html);
+			}
+
+		}
 	</script>
 <?php require "footer.php" ?>
