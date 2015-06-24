@@ -23,9 +23,6 @@
 	<link rel="stylesheet" href="css/jquery.jscrollpane.css">
 	<link rel="stylesheet" href="css/responsive-nav.css">
 	<link rel="stylesheet" href="style.css">
-	<!--[if gt IE8]>
-		<link rel="stylesheet" type="text/css" href="ie.css" />
-	<![endif]-->
 	
 	<!-- JS -->
 	<script src="js/jquery-1.11.2.min.js"></script>

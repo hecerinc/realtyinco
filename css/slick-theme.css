@@ -37,7 +37,7 @@
     color: transparent;
     border: none;
     outline: none;
-    background: transparent;
+    /*background: transparent;*/
 }
 .slick-prev:hover,
 .slick-prev:focus,
@@ -46,7 +46,7 @@
 {
     color: transparent;
     outline: none;
-    background: transparent;
+    /*background: transparent;*/
 }
 .slick-prev:hover:before,
 .slick-prev:focus:before,
@@ -84,7 +84,7 @@
     right: -25px;
     left: auto;
 }
-.slick-prev:before
+/*.slick-prev:before
 {
     content: '←';
 }
@@ -92,7 +92,18 @@
 {
     content: '→';
 }
-
+*/
+.slick-prev, .slick-next{
+    display: block;
+    background:url(../img/slick-arrows.png) no-repeat;
+    height: 20px;
+}
+.slick-prev{
+    height: 18px;
+}
+.slick-next{
+    background-position:0 -19px;
+}
 .slick-next
 {
     right: -25px;
@@ -102,14 +113,14 @@
     right: auto;
     left: -25px;
 }
-.slick-next:before
+/*.slick-next:before
 {
     content: '→';
 }
 [dir='rtl'] .slick-next:before
 {
     content: '←';
-}
+}*/
 
 /* Dots */
 .slick-slider

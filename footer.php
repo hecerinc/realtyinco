@@ -12,9 +12,9 @@
 
 	</footer>
 </body>
-<script src="js/jScrollPane.js"></script>
-<script src="js/jquery.mousewheel.js"></script>
-<script src="js/SelectBox.js"></script>
+<!-- <script src="js/jScrollPane.js"></script> -->
+<!-- <script src="js/jquery.mousewheel.js"></script> -->
+<!-- <script src="js/SelectBox.js"></script> -->
 <script>
 	var navigation;
 	$(function(){

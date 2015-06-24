@@ -33,7 +33,7 @@
 					<tr>
 						<td>
 							<div class="bottom u-cf">
-								<ul class="left u-fl no-mobile-b">
+								<ul class="left u-fl">
 									<li><strong>Tipo de operaci&oacute;n:</strong> Venta</li>
 									<li><strong>Tipo de inmueble:</strong> Casa</li>
 									<li><strong>Ubicaci&oacute;n:</strong> Zona Contry</li>
@@ -78,7 +78,7 @@
 					<tr>
 						<td>
 							<div class="bottom u-cf">
-								<ul class="left u-fl no-mobile-b">
+								<ul class="left u-fl">
 									<li><strong>Tipo de operaci&oacute;n:</strong> Venta</li>
 									<li><strong>Tipo de inmueble:</strong> Casa</li>
 									<li><strong>Ubicaci&oacute;n:</strong> Zona Contry</li>
@@ -121,7 +121,7 @@
 					<tr>
 						<td>
 							<div class="bottom u-cf">
-								<ul class="left u-fl no-mobile-b">
+								<ul class="left u-fl">
 									<li><strong>Tipo de operaci&oacute;n:</strong> Venta</li>
 									<li><strong>Tipo de inmueble:</strong> Casa</li>
 									<li><strong>Ubicaci&oacute;n:</strong> Zona Contry</li>
@@ -164,7 +164,7 @@
 					<tr>
 						<td>
 							<div class="bottom u-cf">
-								<ul class="left u-fl no-mobile-b">
+								<ul class="left u-fl">
 									<li><strong>Tipo de operaci&oacute;n:</strong> Venta</li>
 									<li><strong>Tipo de inmueble:</strong> Casa</li>
 									<li><strong>Ubicaci&oacute;n:</strong> Zona Contry</li>

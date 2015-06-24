@@ -519,6 +519,7 @@ h5{
 	width: 100%;
 }
 
+/* Vista Normal vnormal */
 .found .bottom{
 	background-color: #FAFAFA;
 	border-bottom: 1px solid #F3F3F3;
@@ -537,7 +538,7 @@ h5{
 	width: 33%;
 }
 .found .top p{
-	text-align: center;
+	/*text-align: center;*/
 	font-size: 1.5rem;
 }
 .found .top .prop-id p{
@@ -592,12 +593,23 @@ th, td{
 #select-orderby{
 	float: left;
 }
+.orderby.normal{
+	height: 25px;
+	font-size: 1.3rem;
+	padding:0 5px;
+	margin-bottom: 0;
+	margin-right: 10px;
+}
+table.found .bottom .left{
+	max-width: 250px;
+}
 .numres{
 	float: left;
 	color: #666;
 	text-transform: uppercase;
 	font-size: 1.3rem;
 }
+/* Vista rapida vrapida */
 .quickview{
 	width: 100%;
 }
@@ -1165,12 +1177,20 @@ there.
 		font-size: 1.5rem;
 		margin: 2px 0 7px;
 	}
-	.found td div.bottom{
-		position: initial;
-		top: 0;
-	}
 	.found td.img, .found td.img img{
 		width: 100%;
+	}
+	.found .bottom .top div{
+		float: none;
+		width: 100%;
+		text-align: center;
+	}
+	.found .bottom{
+		background:none;
+	}
+	.found .bottom .left,
+	.found .bottom .right{
+		display: none;
 	}
 }
 /* Larger than phablet (also point when grid becomes active) */
@@ -1504,46 +1524,55 @@ there.
 		margin: 0 auto;
 	}
 	.found .top div{
-		float: none;
-		width: 100%;
+		/*float: none;*/
+		/*width: 100%;*/
 	}
 	.found .top{		
-		float: right;
-		width: 50%;
 		position: relative;
-		top: 60px;
 		z-index:100;
 	}
 	.btn-mas-info{
 		/*float: none;*/
 		/*margin: 0 auto;*/
+		display: none;
 		margin-right: 40px;
 		margin-top: 90px;
 	}
-	.found .bottom{
-		/*background:none;*/
-		border:0 none;
-		/*z-index: 0;*/
+	.found .prop-id .go-to-prop{
+		float: none;
+		display: block;
+		width: 16px;
+		height: 16px;
+		display: inline-block;
+		padding: 0;
+		margin-left: 5px;
 		position: relative;
-		top: -30px;
+		top: 2px;
 	}
-	.found .bottom .right{
+	.found div.prop-id{
+		width: 100%;
+	}
+	.found .parent .top .name, 
+	.found .parent .top .price{
 		display: none;
 	}
 }
 @media(max-width: 1000px){
 	.found .bottom{
-		background: none;
-	}	
-	.btn-mas-info{
+		/*background: none;*/
+	}
+	.found .bottom .right{
+		margin-right: 15px;
+	}
+	/*.btn-mas-info{
 		float: none;
 		margin: 0 auto;
-	}
-	.found .top{
+	}*/
+	/*.found .top{
 		float: none;
 		width: 100%;
 		position:initial;
-	}
+	}*/
 	.home-btns{
 		width: 520px;
 		margin: 0 auto;
@@ -1553,6 +1582,31 @@ there.
 		width: 382px;
 		margin: 0 auto;
 		float: none;
+	}
+}
+@media (max-width: 925px) and (min-width:751px){
+	.main-nav a{
+		font-size: 1.4rem;
+		padding:0 10px;
+	}
+	.main-nav .last a{
+		padding:0 0 0 5px;
+	}
+	
+}
+@media(max-width: 1190px) and (min-width:926px){
+	.main-nav a{
+		font-size: 1.6rem;
+		padding:0 12px;
+	}
+	.main-nav .last a{
+		padding: 0 0 0 10px;
+	}
+}
+@media(max-width: 815px){
+	.found .bottom{
+		font-size: 1.3rem;
+		padding:6px 15px;
 	}
 }
 @media(min-width:1116px){
@@ -1626,6 +1680,9 @@ there.
 	.map-calc{
 		margin-bottom:5%;
 	}
+	.slider-for .slick-slide img{
+		width: 100%;
+	}
 }
 @media(max-width: 600px){
 	.row.amenities-list{
@@ -1695,8 +1752,24 @@ there.
 		margin-bottom: 5px;
 	}
 }
+@media(max-width: 700px){
+	.found .bottom ul{
+		float: none;
+		text-align: center;
+		width: 100%;
+	}
+	table.found .bottom .left{
+		max-width: 100%;
+	}
+	.found .clear.h15px{
+		height: 40px;
+	}
+}
 /* Larger than Desktop HD */
 @media (min-width: 1200px) {}
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : portrait){
+	
+}
 .top-info{
 	box-sizing:border-box;
 }
