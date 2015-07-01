@@ -178,12 +178,6 @@
 
 <script>
 	$(function(){
-		$("#orderby").each(function(){
-			var sb = new SelectBox({
-				selectbox: $(this),
-				width:220
-			});
-		});
 		checkViewport();
 		//Event handler for window resize
 		$(window).resize(function(){
